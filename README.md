@@ -36,7 +36,9 @@ and have some familiarity with
 1. Under **Infrastructure**, go to **Containers** and choose **Containers in Kubernetes Clusters**.
 1. Hit **Create** in the next page.
 1. In the **Create new cluster** page, pick **US South**, **Lite plan**, name your cluster as
-    **`username`-cluster** and hit **Create Cluster** on the right hand side panel.
+    **`username`-cluster** and hit **Create Cluster** in the panel on the right.
+1. In the **Overview** tab, click the three vertical dots icon on the top right corner and choose **Update version**.
+1. Choose the latest version from the menu and click **Update**.
 
 ### Install IBM Cloud Command-Line Tool
 
