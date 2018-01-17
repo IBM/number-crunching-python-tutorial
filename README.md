@@ -19,17 +19,6 @@ and have some familiarity with
 
 ## Prepare tools and environments
 
-### Set up your GitHub Enterprise environment
-
-1. Go to [IBM GitHub Enterprise](http://github.ibm.com/).
-1. Login using your IBM credentials.
-1. Update your [profile page](https://github.ibm.com/settings/profile).
-1. Install a Git client
-    * macOS and Windows: Download [GitHub Desktop Client](https://desktop.github.com).
-    * Fedora: `sudo dnf install git`.
-1. (macOS and Windows) Open GitHub Desktop and click **Install Command Line Tool...**.
-1. In a terminal window, enter `git --version` to check the installation.
-
 ### Set up your IBM Cloud environment
 
 1. Go to [IBM Cloud Console](https://console.bluemix.net/dashboard/apps).
@@ -42,6 +31,17 @@ and have some familiarity with
     **`username`-cluster** and hit **Create Cluster** in the panel on the right.
 1. In the **Overview** tab, click the three vertical dots icon on the top right corner and choose **Update version**.
 1. Choose the latest version from the menu and click **Update**.
+
+### Set up your GitHub Enterprise environment
+
+1. Go to [IBM GitHub Enterprise](http://github.ibm.com/).
+1. Login using your IBM credentials.
+1. Update your [profile page](https://github.ibm.com/settings/profile).
+1. Install a Git client
+    * macOS and Windows: Download [GitHub Desktop Client](https://desktop.github.com).
+    * Fedora: `sudo dnf install git`.
+1. (macOS and Windows) Open GitHub Desktop and click **Install Command Line Tool...**.
+1. In a terminal window, enter `git --version` to check the installation.
 
 ### Install IBM Cloud CLI
 
