@@ -21,7 +21,7 @@ and have some familiarity with
 
 ### Setting up IBM Cloud environment
 
-1. Go to [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
+1. Go to [IBM Cloud console](https://console.bluemix.net/).
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
 1. Click **Create resource**.
@@ -83,7 +83,7 @@ and have some familiarity with
 
 ### Creating a Python Starter Application
 
-1. Go to [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
+1. Go to [IBM Cloud console](https://console.bluemix.net/).
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
 1. Click **Create resource**.
@@ -92,7 +92,11 @@ and have some familiarity with
 
 ### Creating Git repository
 
-1. In the bottom of the **Overview** tab, click **Enable** the Continuous Delivery feature.
+1. Go to [IBM Cloud console](https://console.bluemix.net/).
+1. Login using your IBM credentials.
+1. Click the profile icon in the top right corner and make sure you are using your own account.
+1. Double-click the **`username`-python-app** application under **CloudFoundry Apps**.
+1. In the bottom right of the **Overview** tab, click **Enable** for the Continuous Delivery feature.
 1. In the bottom of the page, copy the contents of **Source Repository URL** and click **Create**.
 1. Delete **Git** by clicking the three vertical dots in the top right corner of the card.
 1. On the top right, click **Add a Tool** and choose **GitHub Enterprise Whitewater** from the menu.
@@ -105,7 +109,12 @@ and have some familiarity with
 
 ### Configuring Continuous Delivery Pipeline
 
-1. Click the **Delivery Pipeline** card.
+1. Go to [IBM Cloud console](https://console.bluemix.net/).
+1. Login using your IBM credentials.
+1. Click the profile icon in the top right corner and make sure you are using your own account.
+1. Double-click the **`username`-python-app** application under **CloudFoundry Apps**.
+1. In the bottom right of the **Overview** tab, click **View toolchain**.
+1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. In the next screen, click the gear icon in the **Build Stage** card and then **Configure Stage**.
 1. In the **Input** tab, choose the option in **Git repository** that leads to GHE as **Git URL**.
 1. Save your work and run this stage by clicking the "Play" icon.
