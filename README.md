@@ -13,8 +13,8 @@ and have some familiarity with
 * GitHub Enterprise
 * Docker containers
 * Visual Studio Code
+* Continuous Delivery
 * Kubernetes containers
-* Continuous Integration
 * CloudFoundry applications
 
 ## Instructions
