@@ -1,4 +1,4 @@
-# Preparing DevOps tools and environments
+# Installing developer tools and environments
 
 ## Setting up IBM Cloud environment
 
