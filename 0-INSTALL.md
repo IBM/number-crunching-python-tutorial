@@ -55,8 +55,8 @@
 1. Go to [Visual Studio Code download page](https://code.visualstudio.com/Download).
 1. Choose the installer according to your operational system and follow the instructions.
 1. Open VS Code and install extensions
-    * Python: [click "Install"](https://marketplace.visualstudio.com/items?itemName=ms-python.python) or hit `Ctrl+P` and enter `ext install ms-python.python`.
-    * IBM Developer Tools: [click "Install"](https://marketplace.visualstudio.com/items?itemName=IBM.ibm-developer) or hit `Ctrl+P` and enter `ext install IBM.ibm-developer`.
-    * Output Colorizer: [click "Install"](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer) or hit `Ctrl+P` and enter `ext install IBM.output-colorizer`.
-    * Docker: [click "Install"](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker) or hit `Ctrl+P` and enter `ext install PeterJausovec.vscode-docker`.
-    * Kubernetes: [click "Install"](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) or hit `Ctrl+P` and enter `ext install ms-kubernetes-tools.vscode-kubernetes-tools`.
+    * Python: [click "Install"](https://marketplace.visualstudio.com/items?itemName=ms-python.python) or hit `Ctrl + P` and enter `ext install ms-python.python`.
+    * IBM Developer Tools: [click "Install"](https://marketplace.visualstudio.com/items?itemName=IBM.ibm-developer) or hit `Ctrl + P` and enter `ext install IBM.ibm-developer`.
+    * Output Colorizer: [click "Install"](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer) or hit `Ctrl + P` and enter `ext install IBM.output-colorizer`.
+    * Docker: [click "Install"](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker) or hit `Ctrl + P` and enter `ext install PeterJausovec.vscode-docker`.
+    * Kubernetes: [click "Install"](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) or hit `Ctrl + P` and enter `ext install ms-kubernetes-tools.vscode-kubernetes-tools`.
