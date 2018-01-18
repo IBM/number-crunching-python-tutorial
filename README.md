@@ -37,3 +37,4 @@ and have some familiarity with
     1. [Testing the example implementation](2-PLAY.md#testing-the-example-implementation)
     1. [Customizing the example implementation](2-PLAY.md#customizing-the-example-implementation)
     1. [Customizing the example implementation again](2-PLAY.md#customizing-the-example-implementation-again)
+    1. In the end, your file should look like [`app/custom-welcome.py`](app/custom-welcome.py).
