@@ -31,3 +31,9 @@ and have some familiarity with
     1. [Creating a Python Starter Application](1-CONFIGURE.md#creating-a-python-starter-application)
     1. [Creating GitHub Enterprise repository](1-CONFIGURE.md#creating-github-enterprise-repository)
     1. [Configuring Continuous Delivery Pipeline](1-CONFIGURE.md#configuring-continuous-delivery-pipeline)
+
+1. Read [**Playing with your Python application**](2-PLAY.md) and follow the steps.
+    1. [Cloning the repository](2-PLAY.md#cloning-the-repository)
+    1. [Testing the example implementation](2-PLAY.md#testing-the-example-implementation)
+    1. [Customizing the example implementation](2-PLAY.md#customizing-the-example-implementation)
+    1. [Customizing the example implementation again](2-PLAY.md#customizing-the-example-implementation-again)
