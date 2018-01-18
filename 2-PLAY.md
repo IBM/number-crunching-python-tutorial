@@ -28,7 +28,7 @@
 1. Go to <https://username-python-app.mybluemix.net/api/people/World> and observe the response.
 1. Go to <https://username-python-app.mybluemix.net/api/people/DouglasAdams> and observe the response.
 
-## Customizing the example implementation (#1)
+## Customizing the example implementation
 
 1. Open the **`username`-python-app** in a Visual Studio Code window.
 1. Open the `welcome.py` file.
@@ -46,7 +46,7 @@
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 1. Go to <https://username-python-app.mybluemix.net/answer/> and observe the response.
 
-## Customizing the example implementation (#2)
+## Customizing the example implementation again
 
 1. Open the **`username`-python-app** in a Visual Studio Code window.
 1. Open the `welcome.py` file.
