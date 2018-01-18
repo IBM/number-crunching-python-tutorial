@@ -14,7 +14,7 @@
 1. Paste the `git@github.ibm.com` address you copied before and provide the destination as required.
 1. Open the newly cloned repository.
 
-## Test the example implementation
+## Testing the example implementation
 
 1. Open the **`username`-python-app** in a Visual Studio Code window.
 1. Open the `welcome.py` file.
@@ -28,18 +28,16 @@
 1. Go to <https://username-python-app.mybluemix.net/api/people/World> and observe the response.
 1. Go to <https://username-python-app.mybluemix.net/api/people/DouglasAdams> and observe the response.
 
-## Customizing the example implementation
+## Customizing the example implementation (#1)
 
 1. Open the **`username`-python-app** in a Visual Studio Code window.
 1. Open the `welcome.py` file.
 1. Anywhere between lines 19 and 42, add the following code block and save the modifications.
     ```Python
     @app.route('/answer/')
-    def TheAnswerToLifeTheUniverseAndEverything():
-        message = {
-            'content': 'The Answer to Life the Universe and Everything = 42'
-        }
-        return jsonify(results=message)
+    def AnswerToLifeTheUniverseAndEverything():
+        content = 'The Answer to Life the Universe and Everything = 42'
+        return jsonify(message=content)
     ```
 1. Open the **Source Control** panel in the left corner.
 1. Click the `+` icon next to `welcome.py` to **Stage Changes**.
@@ -47,4 +45,25 @@
 1. On the bottom left corner, click the arrows to **Synchronize Changes**.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 1. Go to <https://username-python-app.mybluemix.net/answer/> and observe the response.
-1. Add the following code block to `welcome.py`
+
+## Customizing the example implementation (#2)
+
+1. Open the **`username`-python-app** in a Visual Studio Code window.
+1. Open the `welcome.py` file.
+1. Add the following code block to `welcome.py` and save the modifications.
+    ```Python
+    @app.route('/check/answer/<number>')
+    def CheckAnswerToLifeTheUniverseAndEverything(number):
+        content = {
+            'statement': 'The Answer to Life the Universe and Everything is ' + number + '.',
+            'check': 'The statement is ' + str(number == '42') + '!'
+        }
+        return jsonify(message=content)
+    ```
+1. Open the **Source Control** panel in the left corner.
+1. Click the `+` icon next to `welcome.py` to **Stage Changes**.
+1. Write a meaningful commit message, such as `Created '/check/answer/<number>' endpoint` and click the `√` icon.
+1. On the bottom left corner, click the arrows to **Synchronize Changes**.
+1. Track the deployment progress in the **Continuous Delivery Pipeline**.
+1. Go to <https://username-python-app.mybluemix.net/check/answer/24> and observe the response.
+1. Go to <https://username-python-app.mybluemix.net/check/answer/42> and observe the response.
