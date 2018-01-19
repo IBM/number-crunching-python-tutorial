@@ -38,3 +38,9 @@ and have some familiarity with
     1. [Customizing the example implementation](2-PLAY.md#customizing-the-example-implementation)
     1. [Customizing the example implementation again](2-PLAY.md#customizing-the-example-implementation-again)
     1. In the end, your file should look like [`app/custom-welcome.py`](app/custom-welcome.py).
+
+1. Read [Developing a number-crunching application](3-DEVELOP.md) and follow the steps.
+    1. [Generating a Swagger API documentation](3-DEVELOP.md#generating-a-swagger-api-documentation)
+
+    * Create external Python module to perform average over a comma-separated list of numbers
+    * Create external Python module to plot the histogram of a comma-separated list of numbers 
