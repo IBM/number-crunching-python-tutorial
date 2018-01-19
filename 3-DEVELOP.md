@@ -17,7 +17,7 @@
     api = Api(app, title='My first Python API', version='1.0', doc='/apidocs/',
           description='A number-crunching API')
     ```
-1. Jump two blank lines and add the following code block
+1. Skip two blank lines, add the following code block and save your work.
     ```Python
     @api.route('/double/<int:number>')
     @api.doc(params={'number': 'Number to be doubled.'}, description='This method doubles the input.')
@@ -26,3 +26,7 @@
             return jsonify(result=2 * number)
     ```
 1. In the end, your file should look like [app/swagger-welcome.py](app/swagger-welcome.py).
+1. Commit your changes to the `requirements.txt` and `welcome.py` files.
+1. Sync your commits with the GitHub Enterprise repository.
+1. Track the deployment progress in the **Continuous Delivery Pipeline**.
+1. Go to <https://username-python-app.mybluemix.net/apidocs/> and observe the response.
