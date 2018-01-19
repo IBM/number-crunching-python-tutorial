@@ -14,7 +14,7 @@
 
 ## Setting up GitHub Enterprise environment
 
-1. Go to [IBM GitHub Enterprise](http://github.ibm.com/).
+1. Go to [IBM GitHub Enterprise](https://github.ibm.com/).
 1. Login using your IBM credentials.
 1. Update your [profile page](https://github.ibm.com/settings/profile).
 1. Install a Git client

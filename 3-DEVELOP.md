@@ -5,7 +5,7 @@
 1. Open the **`username`-python-app** repository in Visual Studio Code.
 1. Open the `requirements.txt` file, perform the  modifications below and save your work.
     * Replace `Flask==0.10.1` by `flask==0.12.2` to update [**Flask**](http://flask.pocoo.org)
-    * Add `flask-restplus==0.10.1` to install [**Flask-RESTPlus**](http://flask-restplus.readthedocs.io)
+    * Add `flask-restplus==0.10.1` to install [**Flask-RESTPlus**](https://flask-restplus.readthedocs.io)
     ```Python
     flask==0.12.2
     flask-restplus==0.10.1
@@ -32,7 +32,7 @@
 
 ## Exploring the Swagger API documentation
 
-1. Go to <https://username-python-app.mybluemix.net/apidocs/>.
+1. Go to <http://username-python-app.mybluemix.net/apidocs/>.
 1. On the right hand side, click **Expand Operations**.
 1. Observe how the header in the top reflects [lines 6-7 in `app/swagger-welcome.py`](app/swagger-welcome.py#L6-L7).
 1. Observe how the blue card reflects [lines 10-14 in `app/swagger-welcome.py`](app/swagger-welcome.py#L10-L14).

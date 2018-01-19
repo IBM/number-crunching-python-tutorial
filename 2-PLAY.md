@@ -2,7 +2,7 @@
 
 ## Cloning the repository
 
-1. Go to [IBM GitHub Enterprise](http://github.ibm.com/).
+1. Go to [IBM GitHub Enterprise](https://github.ibm.com/).
 1. Login using your IBM credentials.
 1. Choose **`username`-python-app** from the **Your repositories** menu on the right.
 1. Click the green button **Clone or download** and copy the address starting with `git@github.ibm.com`.
@@ -19,14 +19,14 @@
 1. Open the **`username`-python-app** repository in Visual Studio Code.
 1. Open the `welcome.py` file.
 1. Read the `@app.route('/')` code block in lines 20-22.
-1. Go to <https://username-python-app.mybluemix.net/> and observe the response.
+1. Go to <http://username-python-app.mybluemix.net/> and observe the response.
 1. Read the `@app.route('/myapp')` code block in lines 24-26.
-1. Go to <https://username-python-app.mybluemix.net/myapp> and observe the response.
+1. Go to <http://username-python-app.mybluemix.net/myapp> and observe the response.
 1. Read the `@app.route('/api/people')` code block in lines 28-34.
-1. Go to <https://username-python-app.mybluemix.net/api/people> and observe the response.
+1. Go to <http://username-python-app.mybluemix.net/api/people> and observe the response.
 1. Read the `@app.route('/api/people/<name>')` code block in lines 36-41.
-1. Go to <https://username-python-app.mybluemix.net/api/people/World> and observe the response.
-1. Go to <https://username-python-app.mybluemix.net/api/people/DouglasAdams> and observe the response.
+1. Go to <http://username-python-app.mybluemix.net/api/people/World> and observe the response.
+1. Go to <http://username-python-app.mybluemix.net/api/people/DouglasAdams> and observe the response.
 
 ## Customizing the example implementation
 
@@ -44,7 +44,7 @@
 1. Write a meaningful commit message, such as `Created '/answer/' endpoint` and click the `√` icon.
 1. On the bottom left corner, click the arrows to **Synchronize Changes**.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
-1. Go to <https://username-python-app.mybluemix.net/answer/> and observe the response.
+1. Go to <http://username-python-app.mybluemix.net/answer/> and observe the response.
 
 ## Customizing the example implementation again
 
@@ -65,5 +65,5 @@
 1. Write a meaningful commit message, such as `Created '/check/answer/<number>' endpoint` and click the `√` icon.
 1. On the bottom left corner, click the arrows to **Synchronize Changes**.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
-1. Go to <https://username-python-app.mybluemix.net/check/answer/24> and observe the response.
-1. Go to <https://username-python-app.mybluemix.net/check/answer/42> and observe the response.
+1. Go to <http://username-python-app.mybluemix.net/check/answer/24> and observe the response.
+1. Go to <http://username-python-app.mybluemix.net/check/answer/42> and observe the response.
