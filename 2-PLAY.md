@@ -16,7 +16,7 @@
 
 ## Testing the example implementation
 
-1. Open the **`username`-python-app** in a Visual Studio Code window.
+1. Open the **`username`-python-app** repository in Visual Studio Code.
 1. Open the `welcome.py` file.
 1. Read the `@app.route('/')` code block in lines 20-22.
 1. Go to <https://username-python-app.mybluemix.net/> and observe the response.
@@ -30,7 +30,7 @@
 
 ## Customizing the example implementation
 
-1. Open the **`username`-python-app** in a Visual Studio Code window.
+1. Open the **`username`-python-app** repository in Visual Studio Code.
 1. Open the `welcome.py` file.
 1. Anywhere between lines 19 and 42, add the following code block and save the modifications.
     ```Python
@@ -48,7 +48,7 @@
 
 ## Customizing the example implementation again
 
-1. Open the **`username`-python-app** in a Visual Studio Code window.
+1. Open the **`username`-python-app** repository in Visual Studio Code.
 1. Open the `welcome.py` file.
 1. Add the following code block to `welcome.py` and save the modifications.
     ```Python

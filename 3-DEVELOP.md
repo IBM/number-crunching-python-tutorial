@@ -2,8 +2,8 @@
 
 ## Generating a Swagger API documentation
 
-1. Open the **`username`-python-app** in a Visual Studio Code window.
-1. Open the `requirements.txt`, perform the  modifications below and save your work.
+1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open the `requirements.txt` file, perform the  modifications below and save your work.
     * Replace `Flask==0.10.1` by `flask==0.12.2` to update [Flask](http://flask.pocoo.org)
     * Add `flask-restplus==0.10.1` to install [Flask-RESTPlus](http://flask-restplus.readthedocs.io)
     ```Python
