@@ -41,6 +41,7 @@ and have some familiarity with
 
 1. Read [**Developing a number-crunching application**](3-DEVELOP.md) and follow the steps.
     1. [Generating a Swagger API documentation](3-DEVELOP.md#generating-a-swagger-api-documentation)
+    1. [Exploring the Swagger API documentation](3-DEVELOP.md#exploring-the-swagger-api-documentation)
 
     * Create external Python module to perform average over a comma-separated list of numbers
     * Create external Python module to plot the histogram of a comma-separated list of numbers
