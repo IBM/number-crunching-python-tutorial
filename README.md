@@ -1,6 +1,6 @@
 # IBM Cloud tutorial
 
-A tutorial for deploying Python applications to IBM Cloud.
+A tutorial for deploying *number-crunching* Python applications to IBM Cloud.
 
 ## Scope
 
