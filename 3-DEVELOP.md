@@ -74,7 +74,7 @@
     * *Hint*: copy `plot_histogram()` from [lines 64-85 in `app/functions.py`](app/functions.py#L64-L85).
 1. In the end, your file should look like [`app/functions.py`](app/functions.py).
 
-## Configuring Python environment
+## Configuring Python deployment environment
 
 1. Open the **`username`-python-app** repository in Visual Studio Code.
 1. Create a new file in the main repository directory named `runtime.txt` by clicking the **New File** button.
