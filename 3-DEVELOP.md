@@ -88,3 +88,28 @@
     import matplotlib
     matplotlib.use('agg')
     ```
+
+## Linking number-crunching functions to API methods
+
+1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open `welcome.py` and remove the `@api.route('/double/<int:number>')` code block in lines 10-14.
+1. Add `from src import functions` to the import list at the top of the file.
+1. Add below `my_list = list()` to create an empty Python list.
+1. Create an API method that **prints** the content of the list.
+    * *Hint*: copy [lines 14-18 in `app/number-welcome.py`](app/number-welcome.py#L14-L18).
+1. Create an API method that **resets** the content of the list.
+    * *Hint*: copy [lines 21-26 in `app/number-welcome.py`](app/number-welcome.py#L21-L26).
+1. Create an API method that **reverses** the content of the list.
+    * *Hint*: copy [lines 29-34 in `app/number-welcome.py`](app/number-welcome.py#L29-L34).
+1. Create an API method that **sorts** the content of the list.
+    * *Hint*: copy [lines 37-42 in `app/number-welcome.py`](app/number-welcome.py#L37-L42).
+1. Create an API method that **extends** the content of the list.
+    * *Hint*: copy [lines 45-51 in `app/number-welcome.py`](app/number-welcome.py#L45-L51).
+1. Create an API method that **replaces** the content of the list.
+    * *Hint*: copy [lines 54-61 in `app/number-welcome.py`](app/number-welcome.py#L54-L61).
+1. Create an API method that **calculates the mean** of the content of the list.
+    * *Hint*: copy [lines 64-69 in `app/number-welcome.py`](app/number-welcome.py#L64-L69).
+1. Create an API method that **plots the histogram** of the content of the list.
+    * *Hint*: copy [lines 72-77 in `app/number-welcome.py`](app/number-welcome.py#L72-L77).
+1. Place your mouse cursor on `csv_to_list()`, `calculate_mean()` and `plot_histogram()` and observe the response.
+1. In the end, your file should look like [`app/number-welcome.py`](app/number-welcome.py).
