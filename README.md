@@ -45,3 +45,7 @@ and have some familiarity with
     1. [Creating number-crunching functions](3-DEVELOP.md#creating-number-crunching-functions)
     1. [Configuring Python deployment environment](3-DEVELOP.md#configuring-python-deployment-environment)
     1. [Linking number-crunching functions to API methods](3-DEVELOP.md#linking-number-crunching-functions-to-api-methods)
+
+1. Read [**Containerising the Python application**](4-CONTAINERISE.md) and follow the steps.
+    1. [Create a platform API key](4-CONTAINERISE.md#create-a-platform-API-key)
+    1. [Add Kubernetes deployment to Continuous Delivery Pipeline](4-CONTAINERISE.md#add-kubernetes-deployment-to-continuous-delivery-pipeline)
