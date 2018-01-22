@@ -43,3 +43,4 @@ and have some familiarity with
     1. [Generating a Swagger API documentation](3-DEVELOP.md#generating-a-swagger-api-documentation)
     1. [Exploring the Swagger API documentation](3-DEVELOP.md#exploring-the-swagger-api-documentation)
     1. [Creating number-crunching functions](3-DEVELOP.md#creating-number-crunching-functions)
+    1. [Configuring Python environment](3-DEVELOP.md#configuring-python-environment)
