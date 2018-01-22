@@ -3,12 +3,12 @@
 ## Generating a Swagger API documentation
 
 1. Open the **`username`-python-app** repository in Visual Studio Code.
-1. Open the `requirements.txt` file, perform the  modifications below and save your work.
-    * Replace `Flask==0.10.1` by `flask==0.12.2` to update [**Flask**](http://flask.pocoo.org)
-    * Add `flask-restplus==0.10.1` to install [**Flask-RESTPlus**](https://flask-restplus.readthedocs.io)
+1. Open the `requirements.txt` file, perform the modifications below and save your work.
+    * Replace `Flask==0.10.1` by `flask` to update [**Flask**](http://flask.pocoo.org) to its latest version
+    * Add `flask-restplus` to install the latest [**Flask-RESTPlus**](https://flask-restplus.readthedocs.io)
     ```Python
-    flask==0.12.2
-    flask-restplus==0.10.1
+    flask
+    flask-restplus
     ```
 1. Open the `welcome.py` file and erase all the `@app.route()` code blocks.
 1. Add `from flask_restplus import Api, Resource` to the `import` list at the top of the file.
@@ -44,3 +44,33 @@
     * A floating point number: `1.5`
     * An integer number: `42`
 1. Go to <http://username-python-app.mybluemix.net/double/42> and observe the response.
+
+## Creating number-crunching functions
+
+1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open the `requirements.txt` file, perform the modifications below and save your work.
+    * Add `matplotlib` to install the latest [Matplotlib](https://matplotlib.org).
+    * Add `numpy` to install the latest [NumPy](http://www.numpy.org)
+    ```Python
+    flask
+    flask-restplus
+    matplotlib
+    numpy
+    ```
+1. Click the **Explorer** tab in the right hand panel.
+1. Press the **New Folder** icon and the new folder `src`.
+1. While inside `src/`, click the **New File** icon and name the new file `functions.py`.
+1. Start `function.py` by importing the Python modules you have just added to `requirements.txt`.
+    ```Python
+    from matplotlib import pyplot as plt
+    import numpy as np
+    ```
+1. Implement a function that converts a string with comma-separated integer values to a Python list of integers.
+    * Hint: copy `csv_to_list()` from [lines 5-22 in `app/functions.py`](app/functions.py#L5-L22).
+1. Implement a function that converts a list of integer values to an integer NumPy array.
+    * Hint: copy `list_to_array()` from [lines 25-41 in `app/functions.py`](app/functions.py#L25-L41).
+1. Implement a function that calculates the mean of a list of integer values.
+    * Hint: copy `calculate_mean()` from [lines 44-61 in `app/functions.py`](app/functions.py#L44-L61).
+1. Implement a function that plots the histogram of a list of integer values.
+    * Hint: copy `plot_histogram()` from [lines 64-85 in `app/functions.py`](app/functions.py#L64-L85).
+1. In the end, your file should look like [`app/functions.py`](app/functions.py).
