@@ -78,7 +78,7 @@
 
 1. Open the **`username`-python-app** repository in Visual Studio Code.
 1. Create a new file in the main repository directory named `runtime.txt` by clicking the **New File** button.
-1. Check the latest Python buildpack version [available at IBM Cloud](https://console.bluemix.net/docs/runtimes/python/index.html#python_runtime).
+1. Check the latest Python buildpack version [available at IBM Cloud](https://console.bluemix.net/docs/runtimes/python/index.html).
 1. Add `python-X.Y.Z` to `runtime.txt` reflecting the latest version `X.Y.Z` available.
     * *Example*: `python-3.6.2`
 1. Open the `src/` folder, click the **New File** icon and name the new file `__init__.py`.
