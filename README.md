@@ -52,3 +52,4 @@ and have some familiarity with
     1. [Building a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#building-a-container-with-continuous-delivery-pipeline)
     1. [Deploying a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#deploying-a-container-with-continuous-delivery-pipeline)
     1. [Creating a `Dockerfile`](4-CONTAINERISE.md#creating-a-dockerfile)
+    1. [Accessing the containerised application](4-CONTAINERISE.md#accessing-the-containerised-application)

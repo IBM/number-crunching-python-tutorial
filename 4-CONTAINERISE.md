@@ -62,3 +62,16 @@
     CMD [ "python", "welcome.py" ]
     ```
 1. Save your work, commit and push your changes.
+
+## Accessing the containerised application
+
+1. Go to [IBM Cloud console](https://console.bluemix.net/).
+1. Login using your IBM credentials.
+1. Click the profile icon in the top right corner and make sure you are using your own account.
+1. Double-click the **`username`-python-app** application under **CloudFoundry Apps**.
+1. In the bottom right of the **Overview** tab, click **View toolchain**.
+1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
+1. Track the progress of your latest commit from the **Build Stage** to the **Deploy Stage**.
+1. Click the **View logs and history** link in the **Deploy Stage** card.
+1. After a successful deploy, at the very bottom of the page, you will find a link like <http://IP_ADRESS:PORT>.
+1. Click the link and add `/apidocs/` to the URL in order to open the Swagger API documentation.
