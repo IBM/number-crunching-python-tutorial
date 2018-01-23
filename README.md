@@ -47,5 +47,8 @@ and have some familiarity with
     1. [Linking number-crunching functions to API methods](3-DEVELOP.md#linking-number-crunching-functions-to-api-methods)
 
 1. Read [**Containerising the Python application**](4-CONTAINERISE.md) and follow the steps.
-    1. [Create a platform API key](4-CONTAINERISE.md#create-a-platform-API-key)
-    1. [Add Kubernetes deployment to Continuous Delivery Pipeline](4-CONTAINERISE.md#add-kubernetes-deployment-to-continuous-delivery-pipeline)
+    1. [Creating a `Dockerfile`](4-CONTAINERISE.md#creating-a-dockerfile)
+    1. [Setting up a private registry namespace](4-CONTAINERISE.md#setting-up-a-private-registry-namespace)
+    1. [Building a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#building-a-container-with-continuous-delivery-pipeline)
+    1. [Testing a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#testing-a-container-with-continuous-delivery-pipeline)
+    1. [Deploying a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#deploying-a-container-with-continuous-delivery-pipeline)
