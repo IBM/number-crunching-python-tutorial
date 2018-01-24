@@ -38,6 +38,7 @@
 1. Go to the [IBM Cloud CLI download page](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html).
 1. Choose the installer according to your operational system and follow the instructions.
     * *Note to macOS users*: Homebrew used to have this package, but `caskroom/cask/bluemix-cli` has been outdated for months.
+    * *Note to Windows users*: A reboot is required after installing IBM Cloud CLI.
 1. Install IBM Cloud CLI plugins.
     * IBM Cloud Developer Tools: `bx plugin install dev -r Bluemix`.
     * IBM Cloud Container Service: `bx plugin install container-service -r Bluemix`.
