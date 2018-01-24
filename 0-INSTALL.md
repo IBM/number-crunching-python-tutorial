@@ -21,17 +21,17 @@
     * macOS: Download [GitHub Desktop Client](https://desktop.github.com) or `brew cask install github`.
     * Windows: Download [GitHub Desktop Client](https://desktop.github.com).
     * Fedora: `sudo dnf install git`.
-1. Link it to your `github.ibm.com` account using your IBM credentials.
-    * *Note to Windows users*: You might need to read [pages 16-26](https://github.ibm.com/DevOpsResearch/lab-github-desktop/blob/master/doc/Intro-to-GitHubDesktop.pdf).
+1. Choose **Sign in to you GitHub Enterprise Server** and fill the text box with <https://github.ibm.com>.
+1. Click the **Sign in with your browser** button, and **Authorize** the application in the new window.
+    * *Notes to Windows users*: In case Firefox cannot handle the operation, copy and paste the URL into Internet Explorer.
 1. Define your Git identification credentials
-    * macOS and Windows: Under **Preferences**, go to the **Git** tab and fill in your **Name** and **Email** address.
+    * macOS and Windows: Under **Preferences / Options**, go to the **Git** tab and fill in your **Name** and **Email** address.
     * Fedora: Open a terminal and enter
         ```Shell
         git config --global user.name "Your Name"
         git config --global user.email "username@br.ibm.com"
         ```
-1. (macOS and Windows) Open GitHub Desktop and click **Install Command Line Tool...**.
-1. In a terminal window, enter `git --version` to check the installation.
+1. (macOS) Open GitHub Desktop and click **Install Command Line Tool...**.
 
 ## Installing IBM Cloud CLI
 
