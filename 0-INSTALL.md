@@ -8,7 +8,7 @@
 1. Click **Create resource**.
 1. Under **Infrastructure**, go to **Containers** and choose **Containers in Kubernetes Clusters**.
 1. Click **Create** in the next page.
-1. In the **Create new cluster** page, pick **US South**, **Lite plan**, name your cluster as **`username`-cluster** and click **Create Cluster** in the panel on the right.
+1. In the **Create new cluster** page, pick **US South**, **Free / Lite plan**, name your cluster as **`username`-cluster** and click **Create Cluster** in the panel on the right.
 1. In the **Overview** tab, click the three vertical dots icon on the top right corner and choose **Update version**.
 1. Choose the latest version from the menu and click **Update**.
 
