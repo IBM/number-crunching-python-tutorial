@@ -62,7 +62,7 @@
 1. Go to the [Install and Set Up Up `kubectl` page](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl).
     * *Note to macOS users*: You can also try `brew install kubernetes-cli`.
     * *Note to Fedora users*: You can also try `sudo dnf install kubernetes`.
-    * *Note to Windows users*: To add the folder containing `kubectl.exe` to the system `PATH`, follow [this command-line](https://www.windows-commandline.com/set-path-command-line/) or [this graphical interface](http://www.itprotoday.com/management-mobility/how-can-i-add-new-folder-my-system-path) instructions.
+    * *Note to Windows users*: To add the folder containing `kubectl.exe` to the system `PATH`, follow these [command-line](https://www.windows-commandline.com/set-path-command-line/) or [graphical interface](http://www.itprotoday.com/management-mobility/how-can-i-add-new-folder-my-system-path) instructions.
 1. Follow the instructions appropriate to your operational system.
 1. In a terminal window, enter `kubectl version` to check the installation.
 
