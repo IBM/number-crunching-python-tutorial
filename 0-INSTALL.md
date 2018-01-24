@@ -23,7 +23,7 @@
     * Fedora: `sudo dnf install git`.
 1. Choose **Sign in to you GitHub Enterprise Server** and fill the text box with <https://github.ibm.com>.
 1. Click the **Sign in with your browser** button, and **Authorize** the application in the new window.
-    * *Notes to Windows users*: In case Firefox cannot handle the operation, copy and paste the URL into Internet Explorer.
+    * *Note to Windows users*: In case Firefox cannot handle the operation, copy and paste the URL into Internet Explorer.
 1. Define your Git identification credentials
     * macOS and Windows: Under **Preferences / Options**, go to the **Git** tab and fill in your **Name** and **Email** address.
     * Fedora: Open a terminal and enter
@@ -62,6 +62,7 @@
 1. Go to the [Install and Set Up Up `kubectl` page](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl).
     * *Note to macOS users*: You can also try `brew install kubernetes-cli`.
     * *Note to Fedora users*: You can also try `sudo dnf install kubernetes`.
+    * *Note to Windows users*: To add the folder containing `kubectl.exe` to the system `PATH`, follow [this command-line](https://www.windows-commandline.com/set-path-command-line/) or [this graphical interface](http://www.itprotoday.com/management-mobility/how-can-i-add-new-folder-my-system-path) instructions.
 1. Follow the instructions appropriate to your operational system.
 1. In a terminal window, enter `kubectl version` to check the installation.
 
