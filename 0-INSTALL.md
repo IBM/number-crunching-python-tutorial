@@ -53,7 +53,7 @@
     * macOS 10.10.3 or above: [Get Docker CE for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac) or `brew cask install docker`.
     * Windows 10: [Get Docker CE for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows).
     * macOS (older): [Install Docker Toolbox on macOS](https://docs.docker.com/toolbox/toolbox_install_mac/) or `brew cask install docker-toolbox`.
-    * Windows (older): [Install Docker Toolbox on Windows](https://docs.docker.com/toolbox/toolbox_install_windows/).\
+    * Windows (older): [Install Docker Toolbox on Windows](https://docs.docker.com/toolbox/toolbox_install_windows/).
 1. Windows: Virtualisation must be enabled in the BIOS. Go to **Security**, then **Virtualization** and enable both.
 1. In a terminal window, enter `docker --version` to check the installation.
 
