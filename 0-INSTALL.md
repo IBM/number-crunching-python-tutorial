@@ -10,7 +10,7 @@
 1. Click **Create** in the next page.
 1. In the **Create new cluster** page, pick **US South**, **Free / Lite plan**, name your cluster as **`username`-cluster** and click **Create Cluster** in the panel on the right.
 1. In the **Overview** tab, click the three vertical dots icon on the top right corner and choose **Update version**.
-1. Choose the latest version from the menu and click **Update**.
+1. Choose the latest version, in case your cluster is not up-to-date already, from the menu and click **Update**.
 
 ## Setting up GitHub Enterprise environment
 
