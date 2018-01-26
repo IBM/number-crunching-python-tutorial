@@ -6,7 +6,7 @@ A tutorial for deploying *number-crunching* Python applications to IBM Cloud.
 
 This tutorial illustrates typical work-flows and tools in cloud computing, addressing key concepts
 and technologies.
-By the end of this tutorial everyone should be able to deploy a Python application to IBM Cloud
+By the end of this tutorial everyone should be able to deploy a Python application to the cloud
 and have some familiarity with
 
 * IBM Cloud
