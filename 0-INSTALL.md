@@ -71,6 +71,7 @@
 ## Installing Visual Studio Code
 
 1. Go to [Visual Studio Code download page](https://code.visualstudio.com/Download).
+    * *Note*: Consider changing temporarily to the **IBMInternet** WiFi network if the download fails. 
 1. Choose the installer according to your operational system and follow the instructions.
     * *Note to macOS users*: You can also do `brew cask install visual-studio-code`.
 1. Open VS Code and install extensions
