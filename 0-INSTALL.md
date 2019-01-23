@@ -26,7 +26,7 @@
     * Windows: Download [GitHub Desktop Client](https://desktop.github.com).
     * Fedora: `sudo dnf install git`.
 1. (macOS and Windows): Follow the [instructions](https://help.github.com/desktop/guides/getting-started-with-github-desktop/authenticating-to-github/) and setup GitHub Desktop to use <https://github.ibm.com> as GitHub Enterprise server.
-    * *Note to Windows users*: In case Firefox cannot handle the operation, copy and paste the URL into Internet Explorer.
+    * *Note to Windows users*: In case Firefox cannot handle the operation, copy and paste the URL into a different browser.
 1. Define your Git identification credentials according to your [profile page](https://github.ibm.com/settings/profile).
     * macOS and Windows: Under **Preferences / Options**, go to the **Git** tab and fill in your **Name** and **Email** address.
     * Fedora: Open a terminal and enter
@@ -34,7 +34,7 @@
         git config --global user.name "Your Name"
         git config --global user.email "username@br.ibm.com"
         ```
-1. (macOS) Open GitHub Desktop and click **Install Command Line Tool...**.
+1. (macOS) Click the **GitHub Desktop** menu and select **Install Command Line Tool...**.
 
 ## Installing IBM Cloud CLI
 
@@ -43,9 +43,9 @@
     * *Note to macOS users*: You can also do `brew cask install ibm-cloud-cli`.
     * *Note to Windows users*: A reboot may be required after installing IBM Cloud CLI.
 1. Install IBM Cloud CLI plugins.
-    * IBM Cloud Developer Tools: `ibmcloud plugin install dev -r Bluemix`.
-    * IBM Cloud Container Service: `ibmcloud plugin install container-service -r Bluemix`.
-    * IBM Cloud Container Registry: `ibmcloud plugin install container-registry -r Bluemix`
+    * IBM Cloud Developer Tools: `ibmcloud plugin install dev`.
+    * IBM Cloud Container Service: `ibmcloud plugin install container-service`.
+    * IBM Cloud Container Registry: `ibmcloud plugin install container-registry`
 1. In a terminal window, enter `ibmcloud --version` to check the installation.
 1. In a terminal window, enter `ibmcloud plugin list` to check the plugins.
 
