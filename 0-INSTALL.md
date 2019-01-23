@@ -5,7 +5,7 @@
 1. Go to [IBM Cloud console](https://console.bluemix.net/).
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
-    * *Note*: If you do not have one, you will need to [Create a Free Account](https://console.bluemix.net/registration?target=%2Fdashboard%2Fapps) using your IBM email address.
+    * *Note*: If you do not have one, you will need to [Create a Free Account](https://console.bluemix.net/registration/?target=%2Fdashboard%2Fapps) using your IBM email address.
 1. Click **Create resource**.
 1. Under **Compute**, go to **Infrastructure** and choose **Kubernetes Service**.
 1. Click **Create** in the next page.
