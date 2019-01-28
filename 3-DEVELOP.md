@@ -2,7 +2,7 @@
 
 ## Generating a Swagger API documentation
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Open the `requirements.txt` file, perform the modifications below and save your work.
     * Replace `Flask==0.10.1` by `flask` to update [**Flask**](http://flask.pocoo.org) to its latest version
     * Add `flask-restplus` to install the latest [**Flask-RESTPlus**](https://flask-restplus.readthedocs.io)
@@ -32,7 +32,7 @@
 
 ## Exploring the Swagger API documentation
 
-1. Go to <http://username-python-app.mybluemix.net/apidocs/>.
+1. Go to <http://username-python-microservice.mybluemix.net/apidocs/>.
 1. On the right hand side, click **Expand Operations**.
 1. Observe how the header in the top reflects [lines 6-7 in `app/swagger-welcome.py`](app/swagger-welcome.py#L6-L7).
 1. Observe how the blue card reflects [lines 10-14 in `app/swagger-welcome.py`](app/swagger-welcome.py#L10-L14).
@@ -43,11 +43,11 @@
     * A symbol: `+`
     * A floating point number: `1.5`
     * An integer number: `42`
-1. Go to <http://username-python-app.mybluemix.net/double/42> and observe the response.
+1. Go to <http://username-python-microservice.mybluemix.net/double/42> and observe the response.
 
 ## Creating number-crunching functions
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Open the `requirements.txt` file, perform the modifications below and save your work.
     * Add `matplotlib` to install the latest [Matplotlib](https://matplotlib.org).
     * Add `numpy` to install the latest [NumPy](http://www.numpy.org)
@@ -76,7 +76,7 @@
 
 ## Configuring Python deployment environment
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Create a new file in the main repository directory named `runtime.txt` by clicking the **New File** button.
 1. Check the latest Python buildpack version [available at IBM Cloud](https://console.bluemix.net/docs/runtimes/python/index.html).
 1. Add `python-X.Y.Z` to `runtime.txt` reflecting the latest version `X.Y.Z` available.
@@ -91,7 +91,7 @@
 
 ## Linking number-crunching functions to API methods
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Open `welcome.py` and remove the `@api.route('/double/<int:number>')` code block in lines 10-14.
 1. Add `from src import functions` to the import list at the top of the file.
 1. Add below `my_list = list()` to create an empty Python list.

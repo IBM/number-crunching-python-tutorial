@@ -2,7 +2,7 @@
 
 ## Setting up a private registry namespace
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Open the **Command Palette** and enter `bx login --sso`.
 1. Click the **One Time Code** link and copy your new passcode into the terminal. Hit **Enter**.
 1. Select your personal account, if necessary, following the on-screen instructions.
@@ -24,7 +24,7 @@
 1. Go to [IBM Cloud console](https://console.bluemix.net/).
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. Double-click the **`username`-python-app** application under **CloudFoundry Apps**.
+1. Double-click the **`username`-python-microservice** application under **Apps**.
 1. In the bottom right of the **Overview** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. In the next screen, click the gear icon in the **Build Stage** card and then **Configure Stage**.
@@ -41,7 +41,7 @@
 1. Go to [IBM Cloud console](https://console.bluemix.net/).
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. Double-click the **`username`-python-app** application under **CloudFoundry Apps**.
+1. Double-click the **`username`-python-microservice** application under **Apps**.
 1. In the bottom right of the **Overview** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. In the next screen, click the gear icon in the **Deploy Stage** card and then **Configure Stage**.
@@ -51,7 +51,7 @@
 
 ## Creating a `Dockerfile`
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Create a **New File** in the main repository directory named `Dockerfile` with the following content
     ```Dockerfile
     FROM python:3-slim
@@ -68,7 +68,7 @@
 1. Go to [IBM Cloud console](https://console.bluemix.net/).
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. Double-click the **`username`-python-app** application under **CloudFoundry Apps**.
+1. Double-click the **`username`-python-microservice** application under **Apps**.
 1. In the bottom right of the **Overview** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. Track the progress of your latest commit from the **Build Stage** to the **Deploy Stage**.
