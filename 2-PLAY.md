@@ -4,7 +4,7 @@
 
 1. Go to [IBM GitHub Enterprise](https://github.ibm.com/).
 1. Login using your IBM credentials.
-1. Choose **`username`-python-app** from the **Your repositories** menu on the right.
+1. Choose **`username`-python-microservice** from the **Repositories** menu on the left.
 1. Click the green button **Clone or download** and copy the address starting with `git@github.ibm.com`.
 1. Open **Visual Studio Code** and summon the **Command Palette** with
     * `Ctrl + Shift + P` in [Fedora](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
@@ -16,54 +16,58 @@
 
 ## Testing the example implementation
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
-1. Open the `welcome.py` file.
-1. Read the `@app.route('/')` code block in lines 20-22.
-1. Go to <http://username-python-app.mybluemix.net/> and observe the response.
-1. Read the `@app.route('/myapp')` code block in lines 24-26.
-1. Go to <http://username-python-app.mybluemix.net/myapp> and observe the response.
-1. Read the `@app.route('/api/people')` code block in lines 28-34.
-1. Go to <http://username-python-app.mybluemix.net/api/people> and observe the response.
-1. Read the `@app.route('/api/people/<name>')` code block in lines 36-41.
-1. Go to <http://username-python-app.mybluemix.net/api/people/World> and observe the response.
-1. Go to <http://username-python-app.mybluemix.net/api/people/DouglasAdams> and observe the response.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
+1. Open the `server/routes/index.py` file.
+1. Read the `@app.route('/')` code block.
+1. Go to <http://username-python-microservice.mybluemix.net/> and observe the response.
+1. Read the `@app.route('/error404')` code block.
+1. Go to <http://username-python-microservice.mybluemix.net/error404> and observe the response.
+1. Open the `server/routes/health.py` file.
+1. Read the `@app.route('/health')` code block.
+1. Go to <http://username-python-microservice.mybluemix.net/health> and observe the response.
+1. Open the `server/routes/swagger.py` file.
+1. Read the `@app.route('/swagger/api')` code block.
+1. Go to <http://username-python-microservice.mybluemix.net/swagger/api> and observe the response.
+1. Read the `@app.route('/explorer')` code block.
+1. Go to <http://username-python-microservice.mybluemix.net/explorer> and observe the response.
+1. Click the `/health` endpoint and the **Try it out!** button.
 
 ## Customizing the example implementation
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
-1. Open the `welcome.py` file.
-1. Anywhere between lines 19 and 42, add the following code block and save the modifications.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
+1. Open the `health.py` file.
+1. Add the following code block and save the modifications.
     ```Python
-    @app.route('/answer/')
-    def AnswerToLifeTheUniverseAndEverything():
-        content = 'The Answer to Life the Universe and Everything = 42'
-        return jsonify(message=content)
+    @app.route('/answer')
+    def answer():
+        answer = {'The Answer to Life the Universe and Everything': 42}
+        return jsonify(answer)
     ```
 1. Open the **Source Control** panel in the left corner.
-1. Click the `+` icon next to `welcome.py` to **Stage Changes**.
-1. Write a meaningful commit message, such as `Created '/answer/' endpoint` and click the `√` icon.
+1. Click the `+` icon next to `health.py` to **Stage Changes**.
+1. Write a meaningful commit message, such as `Created '/answer' endpoint` and click the `√` icon.
 1. On the bottom left corner, click the arrows to **Synchronize Changes**.
-1. Track the deployment progress in the **Continuous Delivery Pipeline**.
-1. Go to <http://username-python-app.mybluemix.net/answer/> and observe the response.
+1. Track the deployment progress in the **Continuous Delivery Pipeline** until the **Deploy Stage** passes.
+1. Go to <http://username-python-microservice.mybluemix.net/answer> and observe the response.
 
 ## Customizing the example implementation again
 
-1. Open the **`username`-python-app** repository in Visual Studio Code.
-1. Open the `welcome.py` file.
-1. Add the following code block to `welcome.py` and save the modifications.
+1. Open the **`username`-python-microservice** repository in Visual Studio Code.
+1. Open the `health.py` file.
+1. Add the following code block to `health.py` and save the modifications.
     ```Python
-    @app.route('/check/answer/<number>')
+    @app.route('/answer/<number>')
     def CheckAnswerToLifeTheUniverseAndEverything(number):
         content = {
             'statement': 'The Answer to Life the Universe and Everything is ' + number + '.',
             'check': 'The statement is ' + str(number == '42') + '!'
         }
-        return jsonify(message=content)
+        return jsonify(content)
     ```
 1. Open the **Source Control** panel in the left corner.
-1. Click the `+` icon next to `welcome.py` to **Stage Changes**.
-1. Write a meaningful commit message, such as `Created '/check/answer/<number>' endpoint` and click the `√` icon.
+1. Click the `+` icon next to `health.py` to **Stage Changes**.
+1. Write a meaningful commit message, such as `Created '/answer/<number>' endpoint` and click the `√` icon.
 1. On the bottom left corner, click the arrows to **Synchronize Changes**.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
-1. Go to <http://username-python-app.mybluemix.net/check/answer/24> and observe the response.
-1. Go to <http://username-python-app.mybluemix.net/check/answer/42> and observe the response.
+1. Go to <http://username-python-microservice.mybluemix.net/answer/42> and observe the response.
+1. Go to <http://username-python-microservice.mybluemix.net/answer/24> and observe the response.
