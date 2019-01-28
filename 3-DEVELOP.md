@@ -3,41 +3,39 @@
 ## Generating a Swagger API documentation
 
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
-1. Open the `requirements.txt` file, perform the modifications below and save your work.
-    * Replace `Flask==0.10.1` by `flask` to update [**Flask**](http://flask.pocoo.org) to its latest version
-    * Add `flask-restplus` to install the latest [**Flask-RESTPlus**](https://flask-restplus.readthedocs.io)
+1. Install the latest [**Flask-RESTPlus**](https://flask-restplus.readthedocs.io) by
+    * Adding `flask-restplus` to the bottom of `requirements.txt`.
+    * Adding `flask-restplus = "*"` to the bottom of `Pipfile`.
+1. Open the `server/__init__.py` file, perform the following modifications and save your work.
+    * Add `from flask_restplus import Api` to the `import` list at the top of the file.
+    * Add the following line below the definition of the `app` object in line 6.
+        ```Python
+        api = Api(app, title='My first Python API', version='1.0', doc='/apidocs/', description='A number-crunching API')
+        ```
+1. Create a new `double.py` file in `server/routes/` with the code shown below.
     ```Python
-    flask
-    flask-restplus
-    ```
-1. Open the `welcome.py` file and erase all the `@app.route()` code blocks.
-1. Add `from flask_restplus import Api, Resource` to the `import` list at the top of the file.
-1. Add the following line just below `app = Flask(__name__)`
-    ```Python
-    api = Api(app, title='My first Python API', version='1.0', doc='/apidocs/',
-          description='A number-crunching API')
-    ```
-1. Skip two blank lines, add the following code block and save your work.
-    ```Python
+    from server import api
+    from flask import jsonify
+    from flask_restplus import Resource
+
     @api.route('/double/<int:number>')
     @api.doc(params={'number': 'Number to be doubled.'}, description='This method doubles the input.')
     class DoubleNumber(Resource):
         def get(self, number):
             return jsonify(result=2 * number)
     ```
-1. In the end, your file should look like [`app/swagger-welcome.py`](app/swagger-welcome.py).
-1. Commit your changes to the `requirements.txt` and `welcome.py` files.
+1. Commit your changes to the `requirements.txt`, `Pipfile`, `server/__init__.py` and `double.py` files.
 1. Sync your commits with the GitHub Enterprise repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 
 ## Exploring the Swagger API documentation
 
 1. Go to <http://username-python-microservice.mybluemix.net/apidocs/>.
-1. On the right hand side, click **Expand Operations**.
-1. Observe how the header in the top reflects [lines 6-7 in `app/swagger-welcome.py`](app/swagger-welcome.py#L6-L7).
-1. Observe how the blue card reflects [lines 10-14 in `app/swagger-welcome.py`](app/swagger-welcome.py#L10-L14).
+1. Observe how the header in the top reflects the line recently added to `server/__init__.py`.
+1. Click on the **Default namespace** and the `/double/{number}` endpoint.
+1. Observe how the blue card reflects the `@api.route()` code block (lines 6-10) added to `double.py`.
 1. Try to guess from the documentation the **purpose** and **data input format** of this method.
-1. Click **Try it out!** and observe the response.
+1. Click **Try it out**, enter an input in the text box and hit **Execute**.
 1. Try several values for the `required` field and observe the response.
     * A string: `word`
     * A symbol: `+`
