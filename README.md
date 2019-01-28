@@ -38,7 +38,7 @@ and have some familiarity with
     1. [Testing the example implementation](2-PLAY.md#testing-the-example-implementation)
     1. [Customizing the example implementation](2-PLAY.md#customizing-the-example-implementation)
     1. [Customizing the example implementation again](2-PLAY.md#customizing-the-example-implementation-again)
-    1. In the end, your file should look like [`app/custom-welcome.py`](app/custom-welcome.py)
+    1. In the end, your file should look like [`app/custom-health.py`](app/custom-health.py)
 
 1. Read [**Developing a number-crunching application**](3-DEVELOP.md) and follow the steps.
     1. [Generating a Swagger API documentation](3-DEVELOP.md#generating-a-swagger-api-documentation)
