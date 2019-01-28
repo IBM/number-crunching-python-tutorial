@@ -15,7 +15,8 @@ and have some familiarity with
 * Visual Studio Code
 * Continuous Delivery
 * Kubernetes containers
-* CloudFoundry applications
+* Microservice Starter Kits
+* Cloud Foundry applications
 
 ## Instructions
 
@@ -28,7 +29,7 @@ and have some familiarity with
     1. [Installing Visual Studio Code](0-INSTALL.md#installing-visual-studio-code)
 
 1. Read [**Configuring DevOps tools**](1-CONFIGURE.md) and follow the steps.
-    1. [Creating a Python Starter Application](1-CONFIGURE.md#creating-a-python-starter-application)
+    1. [Creating a Python Starter Kit](1-CONFIGURE.md#creating-a-python-starter-kit)
     1. [Creating GitHub Enterprise repository](1-CONFIGURE.md#creating-github-enterprise-repository)
     1. [Configuring Continuous Delivery Pipeline](1-CONFIGURE.md#configuring-continuous-delivery-pipeline)
 
