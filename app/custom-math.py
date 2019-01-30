@@ -1,13 +1,8 @@
-import os
+from server import api
+from flask import jsonify
+from flask_restplus import Resource
+from server.services import math_services as ms
 
-from flask import Flask, jsonify
-from flask_restplus import Api, Resource
-
-from src import functions
-
-app = Flask(__name__)
-api = Api(app, title='My first Python API', version='1.0', doc='/apidocs/',
-          description='A number-crunching API')
 my_list = list()
 
 
@@ -46,7 +41,7 @@ class SortList(Resource):
 @api.doc(params={'csv': 'Comma-separated integer values.'}, description='Extend current list.')
 class ExtendList(Resource):
     def put(self, csv):
-        new_list = functions.csv_to_list(csv)
+        new_list = ms.csv_to_list(csv)
         my_list.extend(new_list)
         return jsonify(list=my_list)
 
@@ -55,7 +50,7 @@ class ExtendList(Resource):
 @api.doc(params={'csv': 'Comma-separated integer values.'}, description='Replace current list.')
 class ReplaceList(Resource):
     def post(self, csv):
-        new_list = functions.csv_to_list(csv)
+        new_list = ms.csv_to_list(csv)
         my_list.clear()
         my_list.extend(new_list)
         return jsonify(list=my_list)
@@ -65,18 +60,5 @@ class ReplaceList(Resource):
 @api.doc(description='Mean of current list.')
 class CalculateMean(Resource):
     def get(self):
-        my_mean = functions.calculate_mean(my_list)
+        my_mean = ms.calculate_mean(my_list)
         return jsonify(mean=my_mean)
-
-
-@api.route('/list/histogram')
-@api.doc(description='Histogram of current list.')
-class CalculateHistogram(Resource):
-    def get(self):
-        my_url = functions.plot_histogram(my_list)
-        return jsonify(URL=my_url)
-
-
-port = os.getenv('PORT', '5000')
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=int(port))

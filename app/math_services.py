@@ -1,4 +1,3 @@
-from matplotlib import pyplot as plt
 import numpy as np
 
 
@@ -59,27 +58,3 @@ def calculate_mean(integer_list):
     my_array = list_to_array(integer_list)
     mean = my_array.mean()
     return mean
-
-
-def plot_histogram(integer_list):
-    """
-    Plots the histogram of a list of integer values.
-
-    Receives
-    --------
-    integer_list : list
-        List of integer values.
-
-    Returns
-    -------
-    my_file : string
-        Address of the histogram plot.
-    """
-
-    my_file = 'static/images/histogram.png'
-    my_array = list_to_array(integer_list)
-
-    plt.hist(my_array)
-    plt.savefig(my_file)
-
-    return my_file

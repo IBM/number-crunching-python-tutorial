@@ -43,9 +43,9 @@ and have some familiarity with
 1. Read [**Developing a number-crunching application**](3-DEVELOP.md) and follow the steps.
     1. [Generating a Swagger API documentation](3-DEVELOP.md#generating-a-swagger-api-documentation)
     1. [Exploring the Swagger API documentation](3-DEVELOP.md#exploring-the-swagger-api-documentation)
-    1. [Creating number-crunching functions](3-DEVELOP.md#creating-number-crunching-functions)
+    1. [Creating number-crunching services](3-DEVELOP.md#creating-number-crunching-services)
     1. [Configuring Python deployment environment](3-DEVELOP.md#configuring-python-deployment-environment)
-    1. [Linking number-crunching functions to API methods](3-DEVELOP.md#linking-number-crunching-functions-to-api-methods)
+    1. [Linking number-crunching services to API resources](3-DEVELOP.md#linking-number-crunching-services-to-api-resources)
 
 1. Read [**Containerising the Python application**](4-CONTAINERISE.md) and follow the steps.
     1. [Setting up a private registry namespace](4-CONTAINERISE.md#setting-up-a-private-registry-namespace)
