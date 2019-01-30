@@ -61,8 +61,8 @@
 ## Installing Kubernetes client
 
 1. Go to the [Install and Set Up `kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) page.
-    * *Note to macOS users*: You can also try `brew install kubernetes-cli`.
-    * *Note to Fedora users*: You can also try `sudo dnf install kubernetes`.
+    * *Note to macOS users*: You can also do `brew install kubernetes-cli`.
+    * *Note to Fedora users*: You can also do `sudo dnf install kubernetes`.
     * *Note to Windows users*: To add the folder containing [`kubectl.exe`](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-using-curl) to the system `PATH`, follow these [command-line](https://www.windows-commandline.com/set-path-command-line/) or [graphical interface](http://www.itprotoday.com/management-mobility/how-can-i-add-new-folder-my-system-path) instructions.
 1. Follow the instructions appropriate to your operational system.
 1. In a terminal window, enter `kubectl version` to check the installation.
@@ -73,6 +73,7 @@
     * *Note*: Consider changing temporarily to the **IBMInternet** WiFi network if the download fails.
 1. Choose the installer according to your operational system and follow the instructions.
     * *Note to macOS users*: You can also do `brew cask install visual-studio-code`.
+    * *Note to Fedora users*: You can find detailed instructions [here](https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions).
 1. Open VS Code and install extensions
     * Python: [click "Install"](https://marketplace.visualstudio.com/items?itemName=ms-python.python) or hit `Ctrl + P` and enter `ext install ms-python.python`.
     * IBM Developer Tools: [click "Install"](https://marketplace.visualstudio.com/items?itemName=IBM.ibm-developer) or hit `Ctrl + P` and enter `ext install IBM.ibm-developer`.

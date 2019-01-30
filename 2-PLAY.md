@@ -46,7 +46,7 @@
 1. Open the **Source Control** panel in the left corner.
 1. Click the `+` icon next to `health.py` to **Stage Changes**.
 1. Write a meaningful commit message, such as `Created '/answer' endpoint` and click the `√` icon.
-1. On the bottom left corner, click the arrows to **Synchronize Changes**.
+1. On the bottom left corner, click the :arrows_counterclockwise: icon to **Synchronize Changes**.
 1. Track the deployment progress in the **Continuous Delivery Pipeline** until the **Deploy Stage** passes.
 1. Go to <http://username-python-microservice.mybluemix.net/answer> and observe the response.
 
@@ -67,7 +67,7 @@
 1. Open the **Source Control** panel in the left corner.
 1. Click the `+` icon next to `health.py` to **Stage Changes**.
 1. Write a meaningful commit message, such as `Created '/answer/<number>' endpoint` and click the `√` icon.
-1. On the bottom left corner, click the arrows to **Synchronize Changes**.
+1. On the bottom left corner, click the :arrows_counterclockwise: icon to **Synchronize Changes**.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 1. Go to <http://username-python-microservice.mybluemix.net/answer/42> and observe the response.
 1. Go to <http://username-python-microservice.mybluemix.net/answer/24> and observe the response.

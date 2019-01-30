@@ -46,7 +46,7 @@
 ## Creating number-crunching services
 
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
-1. Install the latest [NumPy](http://www.numpy.org) by
+1. Install the latest [**NumPy**](http://www.numpy.org) by
     * Adding `numpy` to the bottom of `requirements.txt`.
     * Adding `numpy = "*"` to the bottom of `Pipfile`.
 1. Create a new file inside `server/services/` and name it `math_services.py`.
@@ -91,7 +91,7 @@
 1. Create an API method that **sorts** the content of the list.
     * *Hint*: copy [lines 32-37 in `app/custom-math.py`](app/custom-math.py#L32-L37).
 1. Create an API method that **extends** the content of the list.
-    * *Hint*: copy [lines 40-46 in `app/custom-math.py`](app/custom-math.py#L40-46).
+    * *Hint*: copy [lines 40-46 in `app/custom-math.py`](app/custom-math.py#L40-L46).
 1. Create an API method that **replaces** the content of the list.
     * *Hint*: copy [lines 49-56 in `app/custom-math.py`](app/custom-math.py#L49-L56).
 1. Create an API method that **calculates the mean** of the content of the list.
