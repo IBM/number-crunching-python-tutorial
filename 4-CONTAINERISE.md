@@ -68,17 +68,12 @@
 1. The name of the API key and the Kubernetes cluster should appear automatically.
 1. Leave everything else untouched and **Save** your changes.
 
-## Creating a `Dockerfile`
+## Customizing the `Dockerfile`
 
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
-1. Create a **New File** in the main repository directory named `Dockerfile` with the following content
+1. Edit the `Dockerfile` and perform the following change use Python 3.
     ```Dockerfile
-    FROM python:3-slim
-    EXPOSE 5000
-    WORKDIR /usr/src/app
-    COPY . .
-    RUN pip install --no-cache-dir -r requirements.txt
-    CMD [ "python", "welcome.py" ]
+    FROM python:3-alpine
     ```
 1. Save your work, commit and push your changes.
 
