@@ -49,8 +49,9 @@ and have some familiarity with
 
 1. Read [**Containerising the Python application**](4-CONTAINERISE.md) and follow the steps.
     1. [Setting up a private registry namespace](4-CONTAINERISE.md#setting-up-a-private-registry-namespace)
-    1. [Creating a platform API key](4-CONTAINERISE.md#creating-a-platform-api-key)
+    1. [Removing the old Cloud Foundry-based toolchain](4-CONTAINERISE.md#removing-the-old-cloud-foundry-based-toolchain)
+    1. [Creating a new Kubernetes-based toolchain](4-CONTAINERISE.md#creating-a-new-kubernetes-based-toolchain)
     1. [Building a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#building-a-container-with-continuous-delivery-pipeline)
     1. [Deploying a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#deploying-a-container-with-continuous-delivery-pipeline)
-    1. [Creating a `Dockerfile`](4-CONTAINERISE.md#creating-a-dockerfile)
+    1. [Customizing the `Dockerfile`](4-CONTAINERISE.md#customizing-the-dockerfile)
     1. [Accessing the containerised application](4-CONTAINERISE.md#accessing-the-containerised-application)
