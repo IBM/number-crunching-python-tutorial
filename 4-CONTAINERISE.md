@@ -2,22 +2,46 @@
 
 ## Setting up a private registry namespace
 
-1. Open the **`username`-python-microservice** repository in Visual Studio Code.
-1. Open the **Command Palette** and enter `bx login --sso`.
-1. Click the **One Time Code** link and copy your new passcode into the terminal. Hit **Enter**.
-1. Select your personal account, if necessary, following the on-screen instructions.
-1. In the terminal enter `bx cr namespace-add username`, replacing `username` accordingly.
-1. Verify with `bx cr namespaces`.
+1. Go to [IBM Cloud console](https://console.bluemix.net/).
+1. Login using your IBM credentials.
+1. Click the profile icon in the top right corner and make sure you are using your own account.
+1. In the top left corner, click the three horizontal lines to open the IBM Cloud console menu.
+1. Select **Kubernetes** from the menu.
+1. In the **Registry** tab, click the **Namespaces** card.
+1. Hit the **Create namespace** button in the right side.
+1. In the **Create namespace** screen, use your **`username`** as name.
+1. Click the **Create** button.
 
-## Creating a platform API key
+## Removing the old Cloud Foundry-based toolchain
 
 1. Go to [IBM Cloud console](https://console.bluemix.net/).
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. On the top right corner, click **Manage** then **Security** and **Platform API Keys**.
-1. Click the **Create** button in the center of the screen.
-1. Name it **Kubernetes**, describe it as **IBM Cloud Kubernetes API Key** and click **Create**.
-1. In the next screen, click **Download** to keep a local copy of the API key.
+1. In the top left corner, click the three horizontal lines to open the IBM Cloud console menu.
+1. Select **DevOps** from the menu to open the [Toolchains](https://console.bluemix.net/devops/toolchains?env_id=ibm%3Ayp%3Aus-south) page.
+1. Make sure your **Location** is **Dallas**.
+1. Locate the **`username`-python-microservice-cf** toolchain in the list.
+1. Click the three vertical dots to the right and select **Delete** to remove the old toolchain.
+1. Enter the name of the toolchain in the text box to enable the **Delete** button.
+1. Click the **Delete** button to remove the Cloud Foundry-based toolchain.
+
+## Creating a new Kubernetes-based toolchain
+
+1. Go to [IBM Cloud console](https://console.bluemix.net/).
+1. Login using your IBM credentials.
+1. Click the profile icon in the top right corner and make sure you are using your own account.
+1. Double-click the **`username`-python-microservice** application under **Apps**.
+1. In the **App details** tab, click **Deploy to Cloud** to enable the Continuous Delivery feature.
+1. In the **Choose a deployment environment** page, pick **Deploy to Kubernetes** and hit **Next**.
+1. In the **Configure toolchain** page, name the toolchain as **`username`-python-microservice-k8s** (where `k8s` refers to "Kubernetes") and click **Create**.
+1. In the **App details** tab, click **View toolchain**.
+1. Delete **Git** and **Eclipse Orion Web IDE** by clicking the three vertical dots in the top right corner of their cards.
+1. On the top right, click **Add a Tool** and choose **GitHub Enterprise Whitewater** from the catalog.
+1. Authorise access from IBM Cloud to your GitHub Enterprise account and check **"I understand"**.
+1. Under **Repository type**, choose **Link** from the menu.
+1. Select the **`username`-python-microservice** repository from the **Repository URL** menu.
+1. Make sure the **Enable GitHub Issues** and **Track deployment of code changes** boxes are checked.
+1. Click **Create Integration**.
 
 ## Building a container with Continuous Delivery Pipeline
 
@@ -25,15 +49,10 @@
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
 1. Double-click the **`username`-python-microservice** application under **Apps**.
-1. In the bottom right of the **Overview** tab, click **View toolchain**.
+1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. In the next screen, click the gear icon in the **Build Stage** card and then **Configure Stage**.
-1. Under **Builder type**, choose **Container Registry**.
-1. Under **API key**, choose **Add an existing API key** from the menu.
-1. Open the `apiKey.json` file you downloaded before and copy the `apiKey` field.
-1. Paste the API key into the text box and click **Save**.
-1. The name of the API key should automatically appear.
-1. Under **Container Registry namespace**, input your `username` as previously defined.
+1. In the **Input** tab, choose the option in **Git repository** that leads to Github Enterprise as **Git URL**.
 1. Leave everything else untouched and **Save** your changes.
 
 ## Deploying a container with Continuous Delivery Pipeline
