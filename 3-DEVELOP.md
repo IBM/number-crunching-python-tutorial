@@ -64,7 +64,6 @@
 1. Sync your commits with the GitHub Enterprise repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 
-
 ## Configuring Python deployment environment
 
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
