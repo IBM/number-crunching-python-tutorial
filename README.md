@@ -55,3 +55,4 @@ and have some familiarity with
     1. [Deploying a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#deploying-a-container-with-continuous-delivery-pipeline)
     1. [Customizing the `Dockerfile`](4-CONTAINERISE.md#customizing-the-dockerfile)
     1. [Accessing the containerised application](4-CONTAINERISE.md#accessing-the-containerised-application)
+    1. [Deploying a container manually using the command-line](4-CONTAINERISE.md#deploying-a-container-manually-using-the-command-line)

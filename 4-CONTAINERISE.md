@@ -61,11 +61,10 @@
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
 1. Double-click the **`username`-python-microservice** application under **Apps**.
-1. In the bottom right of the **Overview** tab, click **View toolchain**.
+1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. In the next screen, click the gear icon in the **Deploy Stage** card and then **Configure Stage**.
-1. Under **Deployer type**, choose **Kubernetes**.
-1. The name of the API key and the Kubernetes cluster should appear automatically.
+1. Verify that all fields are correctly populated.
 1. Leave everything else untouched and **Save** your changes.
 
 ## Customizing the `Dockerfile`
@@ -83,9 +82,41 @@
 1. Login using your IBM credentials.
 1. Click the profile icon in the top right corner and make sure you are using your own account.
 1. Double-click the **`username`-python-microservice** application under **Apps**.
-1. In the bottom right of the **Overview** tab, click **View toolchain**.
+1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. Track the progress of your latest commit from the **Build Stage** to the **Deploy Stage**.
 1. Click the **View logs and history** link in the **Deploy Stage** card.
 1. After a successful deploy, at the very bottom of the page, you will find a link like <http://IP_ADRESS:PORT>.
 1. Click the link and add `/apidocs/` to the URL in order to open the Swagger API documentation.
+
+## Deploying a container manually using the command-line
+
+1. Open **Visual Studio Code** and summon the **Command Palette** with
+    * `Ctrl + Shift + P` in [Fedora](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
+    * `Ctrl + Shift + P` in [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+    * `Cmd + Shift + P` in [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+1. Type `terminal` and choose **View: Toggle Integrated Terminal**.
+1. In the terminal window, issue `ibmcloud login --sso` and follow the on-screen instructions to log into IBM Cloud.
+1. Execute `ibmcloud cs init`, then `ibmcloud cr login`. If the second command fails, make sure **Docker** is running locally.
+1. Configure your Kubernetes cluster by executing the `export` command that is output by the following command.
+    ```Shell
+    $ ibmcloud cs cluster-config <username>-cluster
+    ```
+1. Configure your `kubectl` environment by running the command below.
+    ```Shell
+    $ kubectl config set-context <username>-cluster --cluster=<username>-cluster --namespace=<username>
+    ```
+1. Export your image registry secrets by running both commands below.
+    ```Shell
+    $ kubectl get secret bluemix-default-secret-regional -n default -o yaml | sed 's/default/<username>/g' | kubectl create -f -
+    $ kubectl get secret bluemix-default-secret-international -n default -o yaml | sed 's/default/<username>/g' | kubectl create -f -
+    ```
+1. Take note of the **Repository** URL and image **Tag** number in the output of `ibmcloud cr images`.
+1. Create a **Pod** based on your image and expose it with a **NodePort** service.
+    ```Shell
+    $ kubectl run <username>-python-microservice --image=<repository>:<tag> --restart=Never --image-pull-policy=Always --overrides='{ "apiVersion": "v1", "spec": { "imagePullSecrets": [{"name": "bluemix-<username>-secret-regional"}] } }'
+    $ kubectl expose pod <username>-python-microservice --port=3000 --type=NodePort --name=<username>-python-microservice
+    ```
+1. Take note of the **Public IP** from the output of `ibmcloud cs workers --cluster <username>-cluster`.
+1. Take note of the secondary **Port** number (after the `:`) in the output of `kubectl get all`.
+1. Open a browser window and access `<http://PUBLIC_IP:PORT/apidocs/>.

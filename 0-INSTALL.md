@@ -45,7 +45,7 @@
 1. Install IBM Cloud CLI plugins.
     * IBM Cloud Developer Tools: `ibmcloud plugin install dev`.
     * IBM Cloud Container Service: `ibmcloud plugin install container-service`.
-    * IBM Cloud Container Registry: `ibmcloud plugin install container-registry`
+    * IBM Cloud Container Registry: `ibmcloud plugin install container-registry`.
 1. In a terminal window, enter `ibmcloud --version` to check the installation.
 1. In a terminal window, enter `ibmcloud plugin list` to check the plugins.
 
