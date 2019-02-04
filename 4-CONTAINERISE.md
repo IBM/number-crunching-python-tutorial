@@ -100,23 +100,23 @@
 1. Execute `ibmcloud cs init`, then `ibmcloud cr login`. If the second command fails, make sure **Docker** is running locally.
 1. Configure your Kubernetes cluster by executing the `export` command that is output by the following command.
     ```Shell
-    $ ibmcloud cs cluster-config <username>-cluster
+    ibmcloud cs cluster-config <username>-cluster
     ```
 1. Configure your `kubectl` environment by running the command below.
     ```Shell
-    $ kubectl config set-context <username>-cluster --cluster=<username>-cluster --namespace=<username>
+    kubectl config set-context <username>-cluster --cluster=<username>-cluster --namespace=<username>
     ```
 1. Export your image registry secrets by running both commands below.
     ```Shell
-    $ kubectl get secret bluemix-default-secret-regional -n default -o yaml | sed 's/default/<username>/g' | kubectl create -f -
-    $ kubectl get secret bluemix-default-secret-international -n default -o yaml | sed 's/default/<username>/g' | kubectl create -f -
+    kubectl get secret bluemix-default-secret-regional -n default -o yaml | sed 's/default/<username>/g' | kubectl create -f -
+    kubectl get secret bluemix-default-secret-international -n default -o yaml | sed 's/default/<username>/g' | kubectl create -f -
     ```
 1. Take note of the **Repository** URL and image **Tag** number in the output of `ibmcloud cr images`.
 1. Create a **Pod** based on your image and expose it with a **NodePort** service.
     ```Shell
-    $ kubectl run <username>-python-microservice --image=<repository>:<tag> --restart=Never --image-pull-policy=Always --overrides='{ "apiVersion": "v1", "spec": { "imagePullSecrets": [{"name": "bluemix-<username>-secret-regional"}] } }'
-    $ kubectl expose pod <username>-python-microservice --port=3000 --type=NodePort --name=<username>-python-microservice
+    kubectl run <username>-python-microservice --image=<repository>:<tag> --restart=Never --image-pull-policy=Always --overrides='{ "apiVersion": "v1", "spec": { "imagePullSecrets": [{"name": "bluemix-<username>-secret-regional"}] } }'
+    kubectl expose pod <username>-python-microservice --port=3000 --type=NodePort --name=<username>-python-microservice
     ```
 1. Take note of the **Public IP** from the output of `ibmcloud cs workers --cluster <username>-cluster`.
 1. Take note of the secondary **Port** number (after the `:`) in the output of `kubectl get all`.
-1. Open a browser window and access `<http://PUBLIC_IP:PORT/apidocs/>.
+1. Open a browser window and access `<http://PUBLIC_IP:PORT/apidocs/>`.
