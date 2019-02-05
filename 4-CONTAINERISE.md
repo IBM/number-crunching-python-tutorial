@@ -98,15 +98,19 @@
 1. Type `terminal` and choose **View: Toggle Integrated Terminal**.
 1. In the terminal window, issue `ibmcloud login --sso` and follow the on-screen instructions to log into IBM Cloud.
 1. Execute `ibmcloud cs init`, then `ibmcloud cr login`. If the second command fails, make sure **Docker** is running locally.
-1. Configure your Kubernetes cluster by executing the `export` command that is output by the following command.
+1. Configure your Kubernetes cluster by executing the `export` command that is output by
     ```Shell
     ibmcloud cs cluster-config <username>-cluster
     ```
-1. Configure your `kubectl` environment by running the command below.
+1. Create a Kubernetes namespace.
+    ```Shell
+    kubectl create namespace <username>
+    ```
+1. Configure your `kubectl` environment.
     ```Shell
     kubectl config set-context <username>-cluster --cluster=<username>-cluster --namespace=<username>
     ```
-1. Export your image registry secrets by running both commands below.
+1. Export your image registry secrets.
     ```Shell
     kubectl get secret bluemix-default-secret-regional -n default -o yaml | sed 's/default/<username>/g' | kubectl create -f -
     kubectl get secret bluemix-default-secret-international -n default -o yaml | sed 's/default/<username>/g' | kubectl create -f -
