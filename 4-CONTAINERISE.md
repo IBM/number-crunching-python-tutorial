@@ -2,10 +2,8 @@
 
 ## Setting up a private registry namespace
 
-1. Go to [IBM Cloud console](https://console.bluemix.net/).
-1. Login using your IBM credentials.
-1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. In the top left corner, click the three horizontal lines to open the IBM Cloud console menu.
+1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. In the top left corner, click the three horizontal lines to open the IBM Cloud menu.
 1. Select **Kubernetes** from the menu.
 1. In the **Registry** tab, click the **Namespaces** card.
 1. Hit the **Create namespace** button in the right side.
@@ -14,11 +12,9 @@
 
 ## Removing the old Cloud Foundry-based toolchain
 
-1. Go to [IBM Cloud console](https://console.bluemix.net/).
-1. Login using your IBM credentials.
-1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. In the top left corner, click the three horizontal lines to open the IBM Cloud console menu.
-1. Select **DevOps** from the menu to open the [Toolchains](https://console.bluemix.net/devops/toolchains?env_id=ibm%3Ayp%3Aus-south) page.
+1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. In the top left corner, click the three horizontal lines to open the IBM Cloud menu.
+1. Select **DevOps** from the menu to open the [Toolchains](https://cloud.ibm.com/devops/toolchains?env_id=ibm%3Ayp%3Aus-south) page.
 1. Make sure your **Location** is **Dallas**.
 1. Locate the **`username`-python-microservice-cf** toolchain in the list.
 1. Click the three vertical dots to the right and select **Delete** to remove the old toolchain.
@@ -27,13 +23,11 @@
 
 ## Creating a new Kubernetes-based toolchain
 
-1. Go to [IBM Cloud console](https://console.bluemix.net/).
-1. Login using your IBM credentials.
-1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. Double-click the **`username`-python-microservice** application under **Apps**.
+1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. In the **App details** tab, click **Deploy to Cloud** to enable the Continuous Delivery feature.
-1. In the **Choose a deployment environment** page, pick **Deploy to Kubernetes** and hit **Next**.
-1. In the **Configure toolchain** page, name the toolchain as **`username`-python-microservice-k8s** (where `k8s` refers to "Kubernetes") and click **Create**.
+1. In the **Choose a deployment environment** panel, pick **Deploy to Kubernetes** and hit **Next**.
+1. In the **Configure toolchain** panel, name the toolchain as **`username`-python-microservice-k8s** (where `k8s` refers to "Kubernetes") and click **Create**.
 1. In the **App details** tab, click **View toolchain**.
 1. Delete **Git** and **Eclipse Orion Web IDE** by clicking the three vertical dots in the top right corner of their cards.
 1. On the top right, click **Add a Tool** and choose **GitHub Enterprise Whitewater** from the catalog.
@@ -45,10 +39,8 @@
 
 ## Building a container with Continuous Delivery Pipeline
 
-1. Go to [IBM Cloud console](https://console.bluemix.net/).
-1. Login using your IBM credentials.
-1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. Double-click the **`username`-python-microservice** application under **Apps**.
+1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. In the next screen, click the gear icon in the **Build Stage** card and then **Configure Stage**.
@@ -57,10 +49,8 @@
 
 ## Deploying a container with Continuous Delivery Pipeline
 
-1. Go to [IBM Cloud console](https://console.bluemix.net/).
-1. Login using your IBM credentials.
-1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. Double-click the **`username`-python-microservice** application under **Apps**.
+1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. In the next screen, click the gear icon in the **Deploy Stage** card and then **Configure Stage**.
@@ -78,10 +68,8 @@
 
 ## Accessing the containerised application
 
-1. Go to [IBM Cloud console](https://console.bluemix.net/).
-1. Login using your IBM credentials.
-1. Click the profile icon in the top right corner and make sure you are using your own account.
-1. Double-click the **`username`-python-microservice** application under **Apps**.
+1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
 1. Track the progress of your latest commit from the **Build Stage** to the **Deploy Stage**.

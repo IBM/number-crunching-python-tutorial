@@ -68,7 +68,7 @@
 
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Create a new file in the main repository directory named `runtime.txt` by clicking the **New File** button.
-1. Check the latest Python buildpack version [available at IBM Cloud](https://console.bluemix.net/docs/runtimes/python/index.html).
+1. Check the latest Python buildpack version [available at IBM Cloud](https://cloud.ibm.com/docs/runtimes/python/index.html).
 1. Add `python-X.Y.Z` to `runtime.txt` reflecting the latest available version.
     * *Example*: `python-3.6.4`
 1. Commit your changes to the `runtime.txt` file.

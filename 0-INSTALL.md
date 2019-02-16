@@ -2,12 +2,10 @@
 
 ## Setting up IBM Cloud environment
 
-1. Go to [IBM Cloud console](https://console.bluemix.net/).
-1. Login using your IBM credentials.
-1. Click the profile icon in the top right corner and make sure you are using your own account.
-    * *Note*: If you do not have one, you will need to [Create a Free Account](https://console.bluemix.net/registration/?target=%2Fdashboard%2Fapps) using your IBM email address.
-1. Click **Create resource**.
-1. Under **Compute**, go to **Infrastructure** and choose **Kubernetes Service**.
+1. Log into [IBM Cloud](https://cloud.ibm.com/).
+    * *Note*: If you do not have an account, [Create an IBM Cloud account](https://cloud.ibm.com/registration) using your IBM email address.
+1. Click **Create resource** in the top right.
+1. Under **Containers**, choose **Kubernetes Service**.
 1. Click **Create** in the next page.
 1. In the **Create new cluster** page, pick the **default** Resource Group, **Dallas** as Location, **Free** as Cluster Type.
 1. Name your cluster as **`username`-cluster** and click **Create Cluster**.
@@ -18,8 +16,7 @@
 
 ## Setting up GitHub Enterprise environment
 
-1. Go to [IBM GitHub Enterprise](https://github.ibm.com/).
-1. Login using your IBM credentials.
+1. Log into [IBM GitHub Enterprise](https://github.ibm.com/).
 1. Update your [profile page](https://github.ibm.com/settings/profile).
 1. Install a Git client
     * macOS: Download [GitHub Desktop Client](https://desktop.github.com) or `brew cask install github`.
@@ -38,7 +35,7 @@
 
 ## Installing IBM Cloud CLI
 
-1. Go to the [IBM Cloud CLI download page](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#shell_install).
+1. Go to the [IBM Cloud CLI download page](https://cloud.ibm.com/docs/cli/reference/ibmcloud/download_cli.html#shell_install).
 1. Choose the install command according to your operational system and follow the instructions.
     * *Note to macOS users*: You can also do `brew cask install ibm-cloud-cli`.
     * *Note to Windows users*: A reboot may be required after installing IBM Cloud CLI.
@@ -70,7 +67,6 @@
 ## Installing Visual Studio Code
 
 1. Go to [Visual Studio Code download page](https://code.visualstudio.com/Download).
-    * *Note*: Consider changing temporarily to the **IBMInternet** WiFi network if the download fails.
 1. Choose the installer according to your operational system and follow the instructions.
     * *Note to macOS users*: You can also do `brew cask install visual-studio-code`.
     * *Note to Fedora users*: You can find detailed instructions [here](https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions).
