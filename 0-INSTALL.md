@@ -10,9 +10,6 @@
 1. In the **Create new cluster** page, pick the **default** Resource Group, **Dallas** as Location, **Free** as Cluster Type.
 1. Name your cluster as **`username`-cluster** and click **Create Cluster**.
 1. In the **Overview** tab, watch as your cluster is deployed. It may take _several minutes_...
-1. Once it reaches **Normal** status, click the three vertical dots icon on the top right corner and choose **Update version**.
-1. Choose the latest version from the menu, in case your cluster is not up-to-date already, and click **Update**. It may take _several tens of minutes_...
-1. Once the **Kubernetes version** reflects the update as completed, go to the **Worker Nodes** tab, click all the checkboxes and then **Update Kubernetes**.
 
 ## Setting up GitHub Enterprise environment
 
