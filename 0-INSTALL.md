@@ -3,7 +3,7 @@
 ## Setting up IBM Cloud environment
 
 1. Log into [IBM Cloud](https://cloud.ibm.com/).
-    * *Note*: If you do not have an account, [Create an IBM Cloud account](https://cloud.ibm.com/registration) using your IBM email address.
+    * *Note*: If you do not have an account, [Create an IBM Cloud account](https://cloud.ibm.com/registration) using your email address.
 1. Click **Create resource** in the top right.
 1. Under **Containers**, choose **Kubernetes Service**.
 1. Click **Create** in the next page.
@@ -14,22 +14,23 @@
 1. Choose the latest version from the menu, in case your cluster is not up-to-date already, and click **Update**. It may take _several tens of minutes_...
 1. Once the **Kubernetes version** reflects the update as completed, go to the **Worker Nodes** tab, click all the checkboxes and then **Update Kubernetes**.
 
-## Setting up GitHub Enterprise environment
+## Setting up GitHub environment
 
-1. Log into [IBM GitHub Enterprise](https://github.ibm.com/).
-1. Update your [profile page](https://github.ibm.com/settings/profile).
+1. Log into [GitHub](https://github.com/).
+    * *Note*: If you do not have an account, [Sign up for free](https://github.com/join) using your email address.
+1. Update your [profile page](https://github.com/settings/profile).
 1. Install a Git client
     * macOS: Download [GitHub Desktop Client](https://desktop.github.com) or `brew cask install github`.
     * Windows: Download [GitHub Desktop Client](https://desktop.github.com).
     * Fedora: `sudo dnf install git`.
-1. (macOS and Windows): Follow the [instructions](https://help.github.com/desktop/guides/getting-started-with-github-desktop/authenticating-to-github/) and setup GitHub Desktop to use <https://github.ibm.com> as GitHub Enterprise server.
+1. (macOS and Windows): Follow the [instructions](https://help.github.com/desktop/guides/getting-started-with-github-desktop/authenticating-to-github/) and setup GitHub Desktop.
     * *Note to Windows users*: In case Firefox cannot handle the operation, copy and paste the URL into a different browser.
-1. Define your Git identification credentials according to your [profile page](https://github.ibm.com/settings/profile).
+1. Define your Git identification credentials according to your [profile page](https://github.com/settings/profile).
     * macOS and Windows: Under **Preferences / Options**, go to the **Git** tab and fill in your **Name** and **Email** address.
     * Fedora: Open a terminal and enter
         ```Shell
         git config --global user.name "Your Name"
-        git config --global user.email "username@br.ibm.com"
+        git config --global user.email "your@email.com"
         ```
 1. (macOS) Click the **GitHub Desktop** menu and select **Install Command Line Tool...**.
 1. Follow [these instructions](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to generate an SSH key.

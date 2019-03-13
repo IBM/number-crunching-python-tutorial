@@ -2,15 +2,15 @@
 
 ## Cloning the repository
 
-1. Log into [IBM GitHub Enterprise](https://github.ibm.com/).
+1. Log into [GitHub](https://github.com/).
 1. Choose **`username`-python-microservice** from the **Repositories** menu on the left.
-1. Click the green button **Clone or download** and copy the address starting with `git@github.ibm.com`.
+1. Click the green button **Clone or download** and copy the address starting with `git@github.com`.
 1. Open **Visual Studio Code** and summon the **Command Palette** with
     * `Ctrl + Shift + P` in [Fedora](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
     * `Ctrl + Shift + P` in [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
     * `Cmd + Shift + P` in [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 1. Type `clone` and select **Git: Clone** from the list.
-1. Paste the `git@github.ibm.com` address you copied before and provide the destination as required.
+1. Paste the `git@github.com` address you copied before and provide the destination as required.
 1. Open the newly cloned repository.
 
 ## Testing the example implementation

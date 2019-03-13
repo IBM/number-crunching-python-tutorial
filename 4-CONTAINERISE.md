@@ -20,9 +20,9 @@
 1. In the **Configure toolchain** panel, name the toolchain as **`username`-python-microservice-k8s** (where `k8s` refers to "Kubernetes") and click **Create**.
 1. In the **App details** tab, click **View toolchain**.
 1. Delete **Git** and **Eclipse Orion Web IDE** by clicking the three vertical dots in the top right corner of their cards.
-1. On the top right, click **Add a Tool** and choose **GitHub Enterprise Whitewater** from the catalog.
-1. Authorise access from IBM Cloud to your GitHub Enterprise account and check **"I understand"**.
-1. Under **Repository type**, choose **Link** from the menu.
+1. On the top right, click **Add a Tool** and choose **GitHub** from the catalog.
+1. If requested, authorise access from IBM Cloud to your GitHub account by clicking the **Authorize** button.
+1. Under **Repository type**, choose **Existing** from the menu.
 1. Select the **`username`-python-microservice** repository from the **Repository URL** menu.
 1. Make sure the **Enable GitHub Issues** and **Track deployment of code changes** boxes are checked.
 1. Click **Create Integration**.

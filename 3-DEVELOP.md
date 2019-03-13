@@ -25,7 +25,7 @@
             return jsonify(result=2 * number)
     ```
 1. Commit your changes to the `requirements.txt`, `Pipfile`, `server/__init__.py` and `math.py` files.
-1. Sync your commits with the GitHub Enterprise repository.
+1. Sync your commits with the GitHub repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 
 ## Exploring the Swagger API documentation
@@ -61,7 +61,7 @@
 1. Implement a service that calculates the mean of a list of integer values.
     * *Hint*: copy `calculate_mean()` from [`app/math_services.py`](app/math_services.py#L43-L60).
 1. Commit your changes to the `requirements.txt`, `Pipfile` and `math_services.py` files.
-1. Sync your commits with the GitHub Enterprise repository.
+1. Sync your commits with the GitHub repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 
 ## Configuring Python deployment environment
@@ -72,7 +72,7 @@
 1. Add `python-X.Y.Z` to `runtime.txt` reflecting the latest available version.
     * *Example*: `python-3.6.4`
 1. Commit your changes to the `runtime.txt` file.
-1. Sync your commits with the GitHub Enterprise repository.
+1. Sync your commits with the GitHub repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 
 ## Linking number-crunching services to API resources
@@ -98,5 +98,5 @@
 1. Place your mouse cursor over `csv_to_list()` and `calculate_mean()` to read the documentation.
 1. In the end, your file should look like [`app/custom-math.py`](app/custom-math.py).
 1. Commit your changes to the `math.py` file.
-1. Sync your commits with the GitHub Enterprise repository.
+1. Sync your commits with the GitHub repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
