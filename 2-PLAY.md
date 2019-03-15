@@ -2,7 +2,7 @@
 
 ## Cloning the repository
 
-1. Log into [GitHub](https://github.com/).
+1. Log in to [GitHub](https://github.com/).
 1. Choose **`username`-python-microservice** from the **Repositories** menu on the left.
 1. Click the green button **Clone or download** and copy the address starting with `git@github.com`.
 1. Open **Visual Studio Code** and summon the **Command Palette** with

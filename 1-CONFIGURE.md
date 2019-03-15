@@ -2,14 +2,14 @@
 
 ## Creating a Python Starter Kit
 
-1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. Click **Create resource** in the top right corner.
 1. Under **Starter Kits**, choose **Python Microservice with Flask** and click **Create app** in the next page.
 1. Name it **`username`-python-microservice**, leaving everything else untouched and hit **Create**.
 
 ## Creating GitHub repository
 
-1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. In the **App details** tab, click **Deploy to Cloud** to enable the Continuous Delivery feature.
 1. In the **Choose a deployment environment** panel, pick **Deploy to Cloud Foundry** and hit **Next**.
@@ -27,7 +27,7 @@
 
 ## Configuring Continuous Delivery Pipeline
 
-1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.

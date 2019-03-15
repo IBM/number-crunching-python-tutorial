@@ -2,7 +2,7 @@
 
 ## Setting up IBM Cloud environment
 
-1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Log in to [IBM Cloud](https://cloud.ibm.com/).
     * *Note*: If you do not have an account, [Create an IBM Cloud account](https://cloud.ibm.com/registration) using your email address.
 1. Click **Create resource** in the top right.
 1. Under **Containers**, choose **Kubernetes Service**.
@@ -16,7 +16,7 @@
 
 ## Setting up GitHub environment
 
-1. Log into [GitHub](https://github.com/).
+1. Log in to [GitHub](https://github.com/).
     * *Note*: If you do not have an account, [Sign up for free](https://github.com/join) using your email address.
 1. Update your [profile page](https://github.com/settings/profile).
 1. Install a Git client

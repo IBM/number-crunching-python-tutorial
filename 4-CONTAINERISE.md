@@ -2,7 +2,7 @@
 
 ## Setting up a private registry namespace
 
-1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. In the top left corner, click the three horizontal lines to open the IBM Cloud menu.
 1. Select **Kubernetes** from the menu.
 1. In the **Registry** tab, click the **Namespaces** card.
@@ -12,7 +12,7 @@
 
 ## Creating a new Kubernetes-based toolchain
 
-1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. Click **Remove toolchain** in the **Deployment details** card to delete the old Cloud Foundry-based toolchain.
 1. Then click the **Deploy to Cloud** button to re-enable the Continuous Delivery feature.
@@ -29,7 +29,7 @@
 
 ## Deploying a container with Continuous Delivery Pipeline
 
-1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
@@ -39,7 +39,7 @@
 
 ## Accessing the containerised application
 
-1. Log into [IBM Cloud](https://cloud.ibm.com/).
+1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. Click **`username`-python-microservice** in the **Apps** panel on the left.
 1. In the **App details** tab, click **View toolchain**.
 1. In the toolchain **Overview** tab, click the **Delivery Pipeline** card.
@@ -55,7 +55,7 @@
     * `Ctrl + Shift + P` in [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
     * `Cmd + Shift + P` in [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 1. Type `terminal` and choose **View: Toggle Integrated Terminal**.
-1. In the terminal window, issue `ibmcloud login --sso` and follow the on-screen instructions to log into IBM Cloud.
+1. In the terminal window, issue `ibmcloud login --sso` and follow the on-screen instructions to log in to IBM Cloud.
 1. Execute `ibmcloud cs init`, then `ibmcloud cr login`. If the second command fails, make sure **Docker** is running locally.
 1. Configure your Kubernetes cluster by executing the `export` command that is output by
     ```Shell
