@@ -2,12 +2,13 @@
 
 A tutorial for deploying *number-crunching* Python applications to IBM Cloud.
 
-## Scope
+## Introduction
 
 This tutorial illustrates typical work-flows and tools in cloud computing, addressing key concepts
 and technologies.
-By the end of this tutorial everyone should be able to deploy a Python application to the cloud
-and have some familiarity with
+By the end of this tutorial you should be able to deploy a Python application to the cloud, both as
+a Cloud Foundry app and as a Kubernetes pod.
+You will also gain some familiarity with
 
 * GitHub
 * IBM Cloud
@@ -18,7 +19,16 @@ and have some familiarity with
 * Microservice Starter Kits
 * Cloud Foundry applications
 
-## Instructions
+## Prerequisites
+
+* Internet access
+* A computer running either MacOS, Windows or Linux
+
+## Estimated time
+
+From 1h to 2h, depending on the familiarity of the reader with the concepts.
+
+## Steps
 
 1. Read [**Installing developer tools and environments**](0-INSTALL.md) and follow the steps.
     1. [Setting up IBM Cloud environment](0-INSTALL.md#setting-up-ibm-cloud-environment)
@@ -53,3 +63,15 @@ and have some familiarity with
     1. [Deploying a container with Continuous Delivery Pipeline](4-CONTAINERISE.md#deploying-a-container-with-continuous-delivery-pipeline)
     1. [Accessing the containerised application](4-CONTAINERISE.md#accessing-the-containerised-application)
     1. [Deploying a container manually using the command-line](4-CONTAINERISE.md#deploying-a-container-manually-using-the-command-line)
+
+## Summary
+
+Congratulations, you have now deployed you own Python application to IBM Cloud using two deployment
+modes: Cloud Foundry apps and Kubernetes pods.
+You have also learned how to document your API using the Swagger specification.
+If you want to learn more ways to deploy your Python application in the cloud, take a look at the
+link below.
+
+## Related links
+
+* [Three ways to deploy a Python app into an OpenShift cluster](https://developer.ibm.com/tutorials/deploy-python-app-to-openshift-cluster-source-to-image/)
