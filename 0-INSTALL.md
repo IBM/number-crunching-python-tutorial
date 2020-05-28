@@ -4,15 +4,11 @@
 
 1. Log in to [IBM Cloud](https://cloud.ibm.com/).
     * *Note*: If you do not have an account, [Create an IBM Cloud account](https://cloud.ibm.com/registration) using your email address.
-1. Click **Create resource** in the top right.
-1. Under **Containers**, choose **Kubernetes Service**.
-1. Click **Create** in the next page.
-1. In the **Create new cluster** page, pick the **default** Resource Group, **North America** as Location, **Free** as Cluster Type.
-1. Name your cluster as **`username`-cluster** and click **Create Cluster**.
-1. In the **Overview** tab, watch as your cluster is deployed. It may take _several minutes_...
-1. Once it reaches **Normal** status, click the three vertical dots icon on the top right corner and choose **Update version**.
-1. Choose the latest version from the menu, in case your cluster is not up-to-date already, and click **Update**. It may take _several tens of minutes_...
-1. Once the **Kubernetes version** reflects the update as completed, go to the **Worker Nodes** tab, click all the checkboxes and then **Update Kubernetes**.
+1. Click **Create resource +** in the top right.
+1. Open the **Services** menu on the left, then select the **Containers** category and click the **Kubernetes Service** card.
+1. In the **Kubernetes Cluster** page, select the **Free** plan and **default** resource group.
+1. Name your cluster as **`username`-cluster** and click **Create**.
+1. In the **Overview** tab on the left, watch as your cluster is deployed. It may take _several tens of minutes_ until the **Normal** status is reached.
 
 ## Setting up GitHub environment
 
@@ -28,10 +24,12 @@
 1. Define your Git identification credentials according to your [profile page](https://github.com/settings/profile).
     * macOS and Windows: Under **Preferences / Options**, go to the **Git** tab and fill in your **Name** and **Email** address.
     * Fedora: Open a terminal and enter
+
         ```Shell
         git config --global user.name "Your Name"
         git config --global user.email "your@email.com"
         ```
+
 1. (macOS) Click the **GitHub Desktop** menu and select **Install Command Line Tool...**.
 1. Follow [these instructions](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to generate an SSH key.
 1. Add the SSH key to your GitHub profile according to the [instructions](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account).
@@ -44,7 +42,7 @@
     * *Note to Windows users*: A reboot may be required after installing IBM Cloud CLI.
 1. Install IBM Cloud CLI plugins.
     * IBM Cloud Developer Tools: `ibmcloud plugin install dev`.
-    * IBM Cloud Container Service: `ibmcloud plugin install container-service`.
+    * IBM Cloud Container Service: `ibmcloud plugin install kubernetes-service`.
     * IBM Cloud Container Registry: `ibmcloud plugin install container-registry`.
 1. In a terminal window, enter `ibmcloud --version` to check the installation.
 1. In a terminal window, enter `ibmcloud plugin list` to check the plugins.
@@ -60,11 +58,10 @@
 
 ## Installing Kubernetes client
 
-1. Go to the [Install and Set Up `kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) page.
+1. Go to the [Install and Set Up `kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/) page and follow the instructions appropriate to your operational system.
     * *Note to macOS users*: You can also do `brew install kubernetes-cli`.
     * *Note to Fedora users*: You can also do `sudo dnf install kubernetes`.
-    * *Note to Windows users*: To add the folder containing [`kubectl.exe`](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-using-curl) to the system `PATH`, follow these [command-line](https://www.windows-commandline.com/set-path-command-line/) or [graphical interface](http://www.itprotoday.com/management-mobility/how-can-i-add-new-folder-my-system-path) instructions.
-1. Follow the instructions appropriate to your operational system.
+    * *Note to Windows users*: To add the folder containing [`kubectl.exe`](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows) to the system `PATH`, follow these [command-line](https://www.windows-commandline.com/set-path-command-line/) or [graphical interface](http://www.itprotoday.com/management-mobility/how-can-i-add-new-folder-my-system-path) instructions.
 1. In a terminal window, enter `kubectl version` to check the installation.
 
 ## Installing Visual Studio Code
