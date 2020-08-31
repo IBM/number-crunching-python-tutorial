@@ -3,11 +3,11 @@
 ## Generating a Swagger API documentation
 
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
-1. Install the latest [**Flask-RESTPlus**](https://flask-restplus.readthedocs.io) by
-    * Adding `flask-restplus` to the bottom of `requirements.txt`.
-    * Adding `flask-restplus = "*"` to the bottom of `Pipfile`.
+1. Install the latest [**Flask-RESTX**](https://flask-restx.readthedocs.io/) by
+    * Adding `flask-restx = "*"` to the bottom of `Pipfile`.
+1. Delete the `Pipfile.lock` file to force `pipenv` to read your modified `Pipfile`.
 1. Open the `server/__init__.py` file, perform the following modifications and save your work.
-    * Add `from flask_restplus import Api` to the `import` list at the top of the file.
+    * Add `from flask_restx import Api` to the `import` list at the top of the file.
     * Add the following line below the definition of the `app` object in line 6.
         ```Python
         api = Api(app, title='My first Python API', version='1.0', doc='/apidocs/', description='A number-crunching API')
@@ -16,7 +16,7 @@
     ```Python
     from server import api
     from flask import jsonify
-    from flask_restplus import Resource
+    from flask_restx import Resource
 
     @api.route('/double/<int:number>')
     @api.doc(params={'number': 'Number to be doubled.'}, description='This method doubles the input.')
@@ -24,7 +24,7 @@
         def get(self, number):
             return jsonify(result=2 * number)
     ```
-1. Commit your changes to the `requirements.txt`, `Pipfile`, `server/__init__.py` and `math.py` files.
+1. Commit your changes to the `Pipfile`, `Pipfile.lock`, `server/__init__.py` and `math.py` files.
 1. Sync your commits with the GitHub repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 
@@ -47,10 +47,9 @@
 
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Install the latest [**NumPy**](http://www.numpy.org) by
-    * Adding `numpy` to the bottom of `requirements.txt`.
     * Adding `numpy = "*"` to the bottom of `Pipfile`.
 1. Create a new file inside `server/services/` and name it `math_services.py`.
-1. Start `math_services.py` by importing the Python module you have just added to `requirements.txt`.
+1. Start `math_services.py` by importing the Python module you have just added to `Pipfile`.
     ```Python
     import numpy as np
     ```
@@ -60,7 +59,7 @@
     * *Hint*: copy `list_to_array()` from [`app/math_services.py`](app/math_services.py#L24-L40).
 1. Implement a service that calculates the mean of a list of integer values.
     * *Hint*: copy `calculate_mean()` from [`app/math_services.py`](app/math_services.py#L43-L60).
-1. Commit your changes to the `requirements.txt`, `Pipfile` and `math_services.py` files.
+1. Commit your changes to the `Pipfile` and `math_services.py` files.
 1. Sync your commits with the GitHub repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 

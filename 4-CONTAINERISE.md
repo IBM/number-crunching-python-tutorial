@@ -14,15 +14,15 @@
 
 1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. Click **`username`-python-microservice** in the **Apps** panel on the left.
-1. Click **Remove toolchain** in the **Deployment details** card to delete the old Cloud Foundry-based toolchain.
-1. Then click the **Configure continuous delivery** button to re-enable the Continuous Delivery feature.
+1. Click **Disconnect toolchain** in the **Deployment Automation** card to remove the old Cloud Foundry-based toolchain.
+1. Then click the **Deploy your app** button to re-enable the Continuous Delivery feature.
 1. In the **Choose a deployment environment** panel, pick **Deploy to Kubernetes** and hit **Next**.
 1. In the **Configure toolchain** panel, name the toolchain as **`username`-python-microservice-k8s** (where `k8s` refers to "Kubernetes") and click **Create**.
 1. In the **App details** tab, click **View toolchain**.
 1. Delete **Git** and **Eclipse Orion Web IDE** by clicking the three vertical dots in the top right corner of their cards.
 1. On the top right, click **Add a Tool** and choose **GitHub** from the catalog.
-1. If requested, authorise access from IBM Cloud to your GitHub account by clicking the **Authorize** button.
-1. Under **Repository type**, choose **Existing** from the menu.
+1. Authorise access from IBM Cloud to your GitHub account by clicking the **Authorize** button.
+1. Under **Repository type**, choose **Link** from the menu.
 1. Select the **`username`-python-microservice** repository from the **Repository URL** menu.
 1. Make sure the **Enable GitHub Issues** and **Track deployment of code changes** boxes are checked.
 1. Click **Create Integration**.

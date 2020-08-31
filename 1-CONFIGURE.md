@@ -3,25 +3,30 @@
 ## Creating a Python Starter Kit
 
 1. Log in to [IBM Cloud](https://cloud.ibm.com/).
-1. Click **Create resource** in the top right corner.
-1. Under **Starter Kits**, choose **Python Microservice with Flask** and click **Create app** in the next page.
-1. Name it **`username`-python-microservice**, leaving everything else untouched and hit **Create**.
+1. Click **Create resource +** in the top right corner.
+1. Open the **Software** menu on the left, then check the **Developer Tools** and **Starter Kits** filter boxes.
+1. Select the **Python Flask App** card.
+1. In the next page, click **Get started**.
+1. Name it **`username`-python-microservice** and, leaving everything else untouched, hit **Create**.
 
 ## Creating GitHub repository
 
 1. Log in to [IBM Cloud](https://cloud.ibm.com/).
 1. Click **`username`-python-microservice** in the **Apps** panel on the left.
-1. In the **App details** tab, click **Configure continuous delivery** to enable the Continuous Delivery feature.
-1. In the **Choose a deployment environment** panel, pick **Deploy to Cloud Foundry** and hit **Next**.
-1. In the **Configure toolchain** panel, name the toolchain as **`username`-python-microservice-cf** (where `cf` refers to "Cloud Foundry") and click **Create**.
-1. Copy the Git URL in the **Deployment details** box and click the **View toolchain** button.
-    * *Note*: You might need to refresh the browser window in case the Git URL does not show up.
-1. Delete **Git** and **Eclipse Orion Web IDE** by clicking the three vertical dots in the top right corner of their cards.
-1. On the top right, click **Add a Tool** and choose **GitHub** from the catalog.
-1. Authorise access from IBM Cloud to your GitHub account by clicking the **Authorize** button.
+1. In the **Deployment Automation** card, click the **Deploy your app** button to configure the Continuous Delivery feature.
+1. In the **Select the deployment target** panel, pick **Cloud Foundry**.
+1. Click the **New +** button to generate a new **IBM Cloud API key** and click **OK** in the pop-up window. Click **Next** at the bottom of the screen.
+1. In the **Configure the DevOps toolchain** panel, name the toolchain as **`username`-python-microservice-cf** (where `cf` refers to "Cloud Foundry") and click **Create**.
+1. Wait until the Delivery Pipeline **Status** moves from *In progress* to *Success*.
+    * *Note:* You might need to refresh your browser window so that it shows the **App URL**.
+1. In the **Details** card, copy the **Source** URL.
+1. In the **Deployment Automation** card, open the link containing the **Name** of your Continuous Delivery service.
+1. On the top right corner, click **Add tool** and choose **GitHub** from the **Version Control** category in the catalog.
+1. Authorise access from IBM Cloud to your GitHub account by checking the **"I understand"** box.
 1. Under **Repository type**, choose **Clone** from the menu.
-1. Paste the URL you copied to **Source repository URL**.
+1. Paste the **Source** URL you copied to **Source repository URL**.
 1. Choose your own username as **Owner** and name the repository as **`username`-python-microservice**.
+    * *Note:* The default **Repository Name** will contain an unwanted `-cf` suffix. Please consider removing it.
 1. Make sure the **Enable GitHub Issues** and **Track deployment of code changes** boxes are checked.
 1. Click **Create Integration**.
 

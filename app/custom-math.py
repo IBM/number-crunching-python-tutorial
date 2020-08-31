@@ -1,6 +1,6 @@
 from server import api
 from flask import jsonify
-from flask_restplus import Resource
+from flask_restx import Resource
 from server.services import math_services as ms
 
 my_list = list()
