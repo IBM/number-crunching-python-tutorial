@@ -1,11 +1,16 @@
 # Installing developer tools and environments
 
+In this section you will build your local development environment as well as the IBM Cloud infrastructure for deploying your application.
+You will start by creating an IBM Cloud account and requesting an instance of a free trial Kubernetes cluster.
+Later you will create a Github account and configure your local `git` client.
+The next steps involve the installation of several software development tools such as `ibmcloud` CLI, Docker, Kubernetes and Visual Studio Code, that will assist you in your journey towards your first cloud-based Python application.
+
 ## Setting up IBM Cloud environment
 
 1. Log in to [IBM Cloud](https://cloud.ibm.com/).
     * *Note*: If you do not have an account, [Create an IBM Cloud account](https://cloud.ibm.com/registration) using your email address.
 1. Click **Create resource +** in the top right.
-1. Open the **Services** menu on the left, then select the **Containers** category and click the **Kubernetes Service** card.
+1. Open the **Services** menu on the left, then select the **Containers** category and click the **Kubernetes Service** card. ![kubernetes](assets/kubernetes_service.png)
 1. In the **Kubernetes Cluster** page, select the **Free** plan and **default** resource group.
 1. Name your cluster as **`username`-cluster** and click **Create**.
 1. In the **Overview** tab on the left, watch as your cluster is deployed. It may take _several tens of minutes_ until the **Normal** status is reached.

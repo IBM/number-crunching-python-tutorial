@@ -1,5 +1,8 @@
 # Developing a number-crunching application
 
+In this section, you will use a new Python library that automatically generates Swagger API documentation from your source code.
+Later you will add new services and routes to your application, adding new number-crunching features to the cloud-based API.
+
 ## Generating a Swagger API documentation
 
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
@@ -24,7 +27,7 @@
         def get(self, number):
             return jsonify(result=2 * number)
     ```
-1. Commit your changes to the `Pipfile`, `Pipfile.lock`, `server/__init__.py` and `math.py` files.
+1. Commit your changes to the `Pipfile`, `server/__init__.py` and `math.py` files.
 1. Sync your commits with the GitHub repository.
 1. Track the deployment progress in the **Continuous Delivery Pipeline**.
 
@@ -98,4 +101,4 @@
 1. In the end, your file should look like [`app/custom-math.py`](app/custom-math.py).
 1. Commit your changes to the `math.py` file.
 1. Sync your commits with the GitHub repository.
-1. Track the deployment progress in the **Continuous Delivery Pipeline**.
+1. Track the deployment progress in the **Continuous Delivery Pipeline**. ![cf_build_stages](assets/cf_build_stages.png)

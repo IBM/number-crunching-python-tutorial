@@ -1,5 +1,8 @@
 # Playing with your Python application
 
+In this section, you will clone the repository to your local machine and become familiar with the structure of the application.
+After that you will add two new simple API calls to your application.
+
 ## Cloning the repository
 
 1. Log in to [GitHub](https://github.com/).
@@ -18,7 +21,7 @@
 1. Open the **`username`-python-microservice** repository in Visual Studio Code.
 1. Open the `server/routes/index.py` file.
 1. Read the `@app.route('/')` code block.
-1. Go to <http://username-python-microservice.mybluemix.net/> and observe the response.
+1. Go to <http://username-python-microservice.mybluemix.net/> and observe the response. ![congratulations](assets/congratulations.png)
 1. Read the `@app.route('/error404')` code block.
 1. Go to <http://username-python-microservice.mybluemix.net/error404> and observe the response.
 1. Open the `server/routes/health.py` file.
