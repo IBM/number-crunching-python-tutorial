@@ -13,7 +13,7 @@ The next steps involve the installation of several software development tools su
 1. Open the **Services** menu on the left, then select the **Containers** category and click the **Kubernetes Service** card. ![kubernetes](assets/kubernetes_service.png)
 1. In the **Kubernetes Cluster** page, select the **Free** plan and **default** resource group.
 1. Name your cluster as **`username`-cluster** and click **Create**.
-1. In the **Overview** tab on the left, watch as your cluster is deployed. It may take _several tens of minutes_ until the **Normal** status is reached.
+1. In the **Overview** tab on the left, watch as your cluster is deployed. It may take up to 30 minutes until the **Normal** status is reached.
 
 ## Setting up GitHub environment
 
